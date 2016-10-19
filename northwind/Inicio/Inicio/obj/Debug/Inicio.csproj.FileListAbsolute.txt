@@ -1,0 +1,190 @@
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\ApplicationInsights.config
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\csc.exe
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\vbc.exe
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.dll.config
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.pdb
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Web.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.Web.Infrastructure.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Helpers.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Mvc.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Razor.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Web.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Razor.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Helpers.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Mvc.xml
+D:\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.csprojResolveAssemblyReference.cache
+D:\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.dll
+D:\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.pdb
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.csprojResolveAssemblyReference.cache
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\obj\Debug\Inicio.pdb
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\ApplicationInsights.config
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\csc.exe
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\vbc.exe
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.dll.config
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Inicio.pdb
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Web.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Helpers.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Mvc.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Razor.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.dll
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.Web.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Razor.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Helpers.xml
+D:\Clase\DWEC\Proyecto northwind\Inicio\Inicio\bin\System.Web.Mvc.xml
+D:\Clase\Inicio\Inicio\obj\Debug\Inicio.csprojResolveAssemblyReference.cache
+D:\Clase\Inicio\Inicio\obj\Debug\Inicio.dll
+D:\Clase\Inicio\Inicio\obj\Debug\Inicio.pdb
+D:\Clase\Inicio\Inicio\bin\ApplicationInsights.config
+D:\Clase\Inicio\Inicio\bin\roslyn\csc.exe
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Clase\Inicio\Inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Clase\Inicio\Inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\Clase\Inicio\Inicio\bin\roslyn\vbc.exe
+D:\Clase\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe
+D:\Clase\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\Clase\Inicio\Inicio\bin\Inicio.dll.config
+D:\Clase\Inicio\Inicio\bin\Inicio.dll
+D:\Clase\Inicio\Inicio\bin\Inicio.pdb
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.Web.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.ApplicationInsights.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Helpers.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Mvc.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Razor.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.Deployment.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.dll
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.Razor.dll
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.Web.xml
+D:\Clase\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\Clase\Inicio\Inicio\bin\Microsoft.ApplicationInsights.xml
+D:\Clase\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Razor.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.Deployment.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Webpages.Razor.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Helpers.xml
+D:\Clase\Inicio\Inicio\bin\System.Web.Mvc.xml
+D:\Clase\Inicio\Inicio\bin\EntityFramework.dll
+D:\Clase\Inicio\Inicio\bin\EntityFramework.SqlServer.dll
+D:\Clase\Inicio\Inicio\bin\EntityFramework.xml
+D:\Clase\Inicio\Inicio\bin\EntityFramework.SqlServer.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\ApplicationInsights.config
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\csc.exe
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\vbc.exe
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Inicio.dll.config
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Inicio.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Inicio.pdb
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\EntityFramework.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\EntityFramework.SqlServer.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.Web.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Helpers.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Mvc.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Razor.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\EntityFramework.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\EntityFramework.SqlServer.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.Web.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.ApplicationInsights.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Razor.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.Deployment.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Webpages.Razor.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Helpers.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\System.Web.Mvc.xml
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\obj\Debug\Inicio.csprojResolveAssemblyReference.cache
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\obj\Debug\Inicio.dll
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\obj\Debug\Inicio.pdb
+D:\Clase\Cliente\Proyectos\oficial\northwind\Inicio\Inicio\bin\Microsoft.Web.Infrastructure.dll

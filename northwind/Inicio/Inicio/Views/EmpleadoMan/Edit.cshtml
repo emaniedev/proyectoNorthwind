@@ -1,0 +1,30 @@
+﻿@using Inicio.Models;
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar </h2>
+  <div>
+    @if (!ViewBag.OK)
+    {
+        <p>ErrorEventArgs: @ViewBag.MENSAJE;</p>
+    }
+    else
+    { 
+    <div>
+        <form method="post" action="" id="form-edit" title="Edit">
+            <p class="message">
+                Datos a cambiar.
+            </p>
+            <p>El ID es: </p>
+            Id :<input type="text" name="id" id="id" value="@ViewBag.DATOS." placeholder="Id" disabled />
+            Apellido :<input type="text" name="Apellido" id="Apellido" value="@ViewBag.DATOS.Apellido" placeholder="Apellido" />
+            Nombre :<input type="text" name="Nombre" id="Nombre" value="@ViewBag.DATOS.Nombre" placeholder="Nombre" />
+            <button type="submit">Editar Empleado</button>
+
+
+        </form>
+    </div>
+    }
+</div>
+

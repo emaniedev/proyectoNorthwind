@@ -1,0 +1,42 @@
+﻿@using Inicio.Entidades
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Patatita</p>
+
+mostrar la lista de empleados.
+
+<div>
+    @if (!ViewBag.OK)
+        {
+            @ViewBag.MENSAJE
+        }
+        else
+        {
+        <p>Listado de todos los empleados</p>
+        <table border="1">
+            <tr>
+                <th>IDEmpleado</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+            </tr>
+
+            @foreach (enEmpleados oenEmpleados in @ViewBag.DATOS)
+            {
+                <tr>
+                    <td>@oenEmpleados.IdEmpleado</td>
+                    <td>@oenEmpleados.Apellido</td>
+                    <td>@oenEmpleados.Nombre</td>
+                </tr>
+            }
+        </table>
+        
+        }
+
+    
+
+</div>

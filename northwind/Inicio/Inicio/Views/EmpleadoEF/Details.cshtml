@@ -1,0 +1,31 @@
+﻿@using Inicio.Models;
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+<h2>Detalles </h2>
+<div>
+    @if (!ViewBag.OK)
+    {
+        <p>ErrorEventArgs: @ViewBag.MENSAJE;</p>
+    }
+    else
+    {
+        <div>
+           
+                <p class="message">
+                    Detalle del empleado.
+                </p>
+                <ul>
+                    <li><em>ID:</em>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @ViewBag.DATOS.idEmpleado</li>
+                    <li><em>Nombre:</em>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @ViewBag.DATOS.Nombre</li>
+                    <li<em>Apellido:</em>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @ViewBag.DATOS.Apellido</li>
+                </ul>
+               
+
+
+            
+        </div>
+    }
+</div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Borrar";
+}
+
+<h2>Eliminacion de registro permanente.</h2>
+
+<div>
+    @if (ViewBag.RESULTADO == 0)
+    {
+        <form method="post" action="" id="form-edit" title="Edit">
+            <p class="message">
+                Se va a borrar este registro:
+            </p>
+            <p>El ID es: </p>
+            Id :<input type="text" name="id" id="id" value="@ViewBag.DATOS.IdEmpleado" placeholder="Id" disabled />
+            Apellido :<input type="text" name="Apellido" id="Apellido" value="@ViewBag.DATOS.Apellido" placeholder="Apellido" disabled />
+            Nombre :<input type="text" name="Nombre" id="Nombre" value="@ViewBag.DATOS.Nombre" placeholder="Nombre" disabled />
+            <button type="submit">Borrar Empleado</button>
+
+
+        </form>
+    }
+    else
+    {
+        <p class="message">
+            Se ha borrado el registro satisfactoriamente.
+        </p>
+    }
+    <div class="container">
+        <h5 class="info">
+            @Html.ActionLink("Volver a buscar", "Index")
+        </h5>
+
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@using Inicio.Entidades;
+@{
+    ViewBag.Title = "Filtro";
+}
+
+<h2>listaFiltro</h2>
+
+
+<div class="container">
+    @if (!ViewBag.OK)
+    {
+        @ViewBag.MENSAJE
+    }
+    else
+    {
+        <p>Listado de todos los empleados Filtrados</p>
+        <p>Se han encontrado @ViewBag.COUNT resultados.</p>
+        <table  class="table table-bordered table-striped table-hover">
+            <tr class="info">
+                <th>IDEmpleado</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Operaciones a realizar</th>
+            </tr>
+
+            @foreach (enEmpleados oenEmpleados in @ViewBag.DATOS)
+            {
+                <tr>
+                    <td>@oenEmpleados.IdEmpleado</td>
+                    <td>@oenEmpleados.Apellido</td>
+                    <td>@oenEmpleados.Nombre</td>
+                    <td>
+                        @Html.ActionLink("Editar:"+oenEmpleados.IdEmpleado ,"Edit", new { id = oenEmpleados.IdEmpleado}) 
+                        @Html.ActionLink("Detalle" + oenEmpleados.IdEmpleado, "Detalle", new { id = oenEmpleados.IdEmpleado}) 
+                        <a href="~/Views/EmpleadoMan/Borrar?ID=@oenEmpleados.IdEmpleado" onclick="return confirm('Estas seguro');"<button type="submit">Borrar: @oenEmpleados.IdEmpleado</button>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <p>@Html.ActionLink("Pagina siguiente", "siguientePagina")</p>
+
+        <div class="container">
+            <h5 class="info">
+                @Html.ActionLink("Volver a buscar", "Index")
+            </h5>
+            
+        </div>
+        
+    }
+
+
+
+</div>
+
