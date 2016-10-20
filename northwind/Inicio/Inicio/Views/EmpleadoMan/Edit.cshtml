@@ -12,15 +12,17 @@
     else
     { 
     <div>
-        <form method="post" action="" id="form-edit" title="Edit">
+        <form class="form-group" method="post" action="" id="form-edit" title="Edit">
             <p class="message">
                 Datos a cambiar.
             </p>
-            <p>El ID es: </p>
-            Id :<input type="text" name="id" id="id" value="@ViewBag.DATOS." placeholder="Id" disabled />
-            Apellido :<input type="text" name="Apellido" id="Apellido" value="@ViewBag.DATOS.Apellido" placeholder="Apellido" />
-            Nombre :<input type="text" name="Nombre" id="Nombre" value="@ViewBag.DATOS.Nombre" placeholder="Nombre" />
-            <button type="submit">Editar Empleado</button>
+            <p></p>
+            Id :<input class="form-control" type="text" name="id" id="id" value="@ViewBag.DATOS.idEmpleado" placeholder="Id" disabled />
+            Apellido :<input class="form-control" type="text" name="Apellido" id="Apellido" value="@ViewBag.DATOS.Apellido" placeholder="Apellido" />
+            Nombre :<input class="form-control" type="text" name="Nombre" id="Nombre" value="@ViewBag.DATOS.Nombre" placeholder="Nombre" />
+            <hr/>
+           
+            <button class="btn btn-success" type="submit">Editar Empleado</button>
 
 
         </form>

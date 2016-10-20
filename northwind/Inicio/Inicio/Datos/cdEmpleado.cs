@@ -79,7 +79,7 @@ namespace Inicio.Datos
             SqlCommand comando = new SqlCommand(sql , con);  //comando que almacena el string sql en la db que se pase por parametro
             comando.Parameters.AddWithValue("@LastName", oenEmpleado.Apellido);
             comando.Parameters.AddWithValue("@FirstName", oenEmpleado.Nombre);
-            SqlDataReader reader = comando.ExecuteReader(System.Data.CommandBehavior.SingleResult);  //almacena el resultado de la consulta en el reader
+           // SqlDataReader reader = comando.ExecuteReader(System.Data.CommandBehavior.SingleResult);  //almacena el resultado de la consulta en el reader
             int retorno = comando.ExecuteNonQuery();
            
             return retorno;
@@ -112,9 +112,43 @@ namespace Inicio.Datos
         {
             string sql = "DELETE FROM Employees WHERE EmployeeID=" + id;
             SqlCommand comando = new SqlCommand(sql, con);  //comando que almacena el string sql en la db que se pase por parametro.
-            SqlDataReader reader = comando.ExecuteReader(System.Data.CommandBehavior.SingleResult);  //almacena el resultado de la consulta en el reader.
+            //SqlDataReader reader = comando.ExecuteReader(System.Data.CommandBehavior.SingleResult);  //almacena el resultado de la consulta en el reader.
             int retorno = comando.ExecuteNonQuery();
 
+            return retorno;
+        }
+
+
+        //Crear empleado
+        ///  ocdEmpleado.AltaEmpleado(con, oenEmpleado);
+        /// Metodo para insertar un registro en la tabla Alumno
+        /// Me devuelve un int (-1=fallo y 1=Bien).
+        /// Todos los métodos pueden generar una excepcion.
+        /// En el objeto oAlumno que recibe, IdAlumno=0 porque no se usa.
+        public int altaEmpleado(SqlConnection con, enEmpleados oenEmpleado)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.CommandText = "INSERT INTO Employees (LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, ReportsTo, PhotoPath)";
+            comando.CommandText += "VALUES(@LastName, @FirstName, @Title, @TitleOfCourtesy, @BirthDate, @HireDate, @Address, @City, @Region, @PostalCode, @Country, @HomePhone, @Extension, @Notes, @ReportsTo, @PhotoPath)";
+            comando.Parameters.AddWithValue("@LastName", oenEmpleado.Apellido);
+            comando.Parameters.AddWithValue("@FirstName", oenEmpleado.Nombre);
+            comando.Parameters.AddWithValue("@Title", "");
+            comando.Parameters.AddWithValue("@TitleOfCourtesy", "");
+            comando.Parameters.AddWithValue("@BirthDate", Convert.ToDateTime("27/01/1966 0:00:00"));
+            comando.Parameters.AddWithValue("@HireDate", Convert.ToDateTime("27/01/1966 0:00:00"));
+            comando.Parameters.AddWithValue("@Address", "");
+            comando.Parameters.AddWithValue("@City", "");
+            comando.Parameters.AddWithValue("@Region", "");
+            comando.Parameters.AddWithValue("@PostalCode", "");
+            comando.Parameters.AddWithValue("@Country", "");
+            comando.Parameters.AddWithValue("@HomePhone", "");
+            comando.Parameters.AddWithValue("@Extension", "");
+            //        comando.Parameters.AddWithValue("@Photo", Convert.ToByte("",0));
+            comando.Parameters.AddWithValue("@Notes", "");
+            comando.Parameters.AddWithValue("@ReportsTo", 2);
+            comando.Parameters.AddWithValue("@PhotoPath", "");
+            comando.Connection = con;
+            int retorno = comando.ExecuteNonQuery();
             return retorno;
         }
     }

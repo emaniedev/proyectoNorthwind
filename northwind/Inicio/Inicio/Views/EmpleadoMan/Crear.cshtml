@@ -1,0 +1,33 @@
+﻿@using Inicio.Models;
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 class="message">Alta </h2>
+  <div>
+    @if (!ViewBag.OK)
+    {
+        <p>ErrorEventArgs: @ViewBag.MENSAJE;</p>
+    }
+    else
+    { 
+    <div>
+        <form class="form-group" method="post" action="" id="form-edit" title="Edit">
+            <p class="message">
+               
+            </p>
+            <p>Introduce los datos del nuevo registro</p>
+            Apellido :<input class="form-control" type="text" name="apellido" id="Apellido" value="" placeholder="Apellido" />
+            Nombre :<input class="form-control" type="text" name="nombre" id="Nombre" value="" placeholder="Nombre" />
+            <hr/>
+            <button class="btn btn-success" type="submit">Crear Empleado</button>
+
+
+        </form>
+        <h4 class="info">
+            @Html.ActionLink("Volver a buscar", "Index")
+        </h4>
+    </div>
+    }
+</div>
+

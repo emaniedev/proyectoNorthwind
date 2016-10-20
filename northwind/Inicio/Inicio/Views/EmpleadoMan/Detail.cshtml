@@ -1,0 +1,34 @@
+﻿@using Inicio.Models;
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Detalles del Empleado </h2>
+<div>
+    @if (!ViewBag.OK)
+    {
+        <p>ErrorEventArgs: @ViewBag.MENSAJE;</p>
+    }
+    else
+    { 
+        <div></div>
+
+       <form class="form-group" method="post" action="" id="form-edit" title="Edit">
+            <p class="message">
+                
+            </p>
+            <p></p>
+            Id :<input class="form-component" type="text" name="id" id="id" value="@ViewBag.DATOS.idEmpleado" placeholder="Id" disabled />
+            Apellido :<input class="form-component" type="text" name="Apellido" id="Apellido" value="@ViewBag.DATOS.Apellido" placeholder="Apellido" disabled />
+            Nombre :<input class="form-component" type="text" name="Nombre" id="Nombre" value="@ViewBag.DATOS.Nombre" placeholder="Nombre" disabled/>
+           <hr/>
+            @Html.ActionLink("Editar", "Edit", new { id = ViewBag.DATOS.idEmpleado })
+                
+            
+               
+
+        </form>
+    
+    }
+</div>
+

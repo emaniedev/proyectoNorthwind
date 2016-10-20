@@ -6,7 +6,7 @@
 <h2>Eliminacion de registro permanente.</h2>
 
 <div>
-    @if (ViewBag.RESULTADO == 0)
+    @if (!ViewBag.BORRADO )
     {
         <form method="post" action="" id="form-edit" title="Edit">
             <p class="message">
@@ -23,9 +23,9 @@
     }
     else
     {
-        <p class="message">
+        <h2 class="success">
             Se ha borrado el registro satisfactoriamente.
-        </p>
+        </h2>
     }
     <div class="container">
         <h5 class="info">

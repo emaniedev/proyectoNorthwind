@@ -15,6 +15,7 @@ namespace Inicio.Controllers
         // GET: EmpleadoMan
         public ActionResult Index()
         {
+            ViewBag.BORRADO = false;
             Session["tPagina"] = 3;
             Session["nPagina"] = 0;//El offset de SQL comienza en 0.
             return View();
@@ -169,29 +170,34 @@ namespace Inicio.Controllers
         //Borrar
         //GET:
 
-        public ActionResult Borrar(int? id)
+        public ActionResult Borrar(int? ID)
         {
-            enEmpleados oenEmpleados = new enEmpleados();
-
+            int resultado = -1;
+            ViewBag.BORRADO = false;
             try
             {
-                cnEmpleado cnEmpleado = new Negocio.cnEmpleado();
-                oenEmpleados = cnEmpleado.consEmpleadoPorId(id);
-                ViewBag.OK = true;
-                ViewBag.DATOS = oenEmpleados;
-                ViewBag.MENSAJE = "Patata Success";
-                ViewBag.MODIF = false;
-                ViewBag.RESULTADO = 0;
+                cnEmpleado ocnEmpleado = new cnEmpleado();
+                resultado = ocnEmpleado.borrarPorId(ID);
+                if (resultado == 1)
+                {
+                    ViewBag.BORRADO = true;
+                    ViewBag.MENSAJE = "Se ha borrado el registro";
+                    return View();
+                }
+                else
+                {
+                    ViewBag.BORRADO = false;
+                    ViewBag.OK = false;
+                    ViewBag.Mensaje = "Nos se ha dado de baja";
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                ViewBag.MODIF = false;
                 ViewBag.OK = false;
-                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Borrar: " + e.Message;
-
+                ViewBag.Datos = null;
+                ViewBag.Mensaje = "Error controlador ConsEmpleadoPorID() = " + ex.Message;
+                return RedirectToAction("PaginaDeError");
             }
-
-
             return View();
         }
 
@@ -199,34 +205,79 @@ namespace Inicio.Controllers
         //Borrar
         //POST:
 
-        [HttpPost]//Ponemos esta etiqueta para que sea un post. Por defecto es get.
-        public ActionResult Borrar(int id)
+        
+        #endregion
+
+        #region Altas()
+
+        //Alta empleados
+
+
+        // GET: EmpleadoMan
+        public ActionResult Crear()
         {
+            ViewBag.OK = true;
+            return View();
+        }
+
+        // POST: EmpleadoMan
+        [HttpPost]
+        public ActionResult Crear(String apellido, String nombre)
+        {
+            enEmpleados oenEmpleado = new enEmpleados
+            {
+                Apellido = apellido,
+                Nombre = nombre
+            };
             int resultado = -1;
             try
             {
                 cnEmpleado ocnEmpleado = new cnEmpleado();
-                resultado = ocnEmpleado.borrarPorId(id);
-                ViewBag.RESULTADO = resultado;
+                resultado = ocnEmpleado.altaEmpleado(oenEmpleado);
                 if (resultado == 1)
                 {
-                    return View();
+                    return RedirectToAction("listaFiltro");
                 }
                 else
                 {
-                    ViewBag.MODIF = false;
-                    ViewBag.MENSAJE = "Error en: Post de la action Borrar ( int? id)";
-                    return RedirectToAction("PaginaDeError");
+                    ViewBag.OK = false;
+                    ViewBag.Mensaje = "No se ha dado de alta";
                 }
             }
             catch (Exception ex)
             {
+                ViewBag.OK = false;
+                ViewBag.Datos = null;
+                ViewBag.Mensaje = "Error EmpleadoManController.Crear = " + ex.Message;
+            }
+            return View();
+        }
+        #endregion
+
+        public ActionResult Detail (int? id)
+        {
+            enEmpleados oenEmpleados = new enEmpleados();
+
+            try
+            {
+                cnEmpleado cnEmpleado = new cnEmpleado();
+                oenEmpleados = cnEmpleado.consEmpleadoPorId(id);
+                ViewBag.OK = true;
+                ViewBag.DATOS = oenEmpleados;
+                ViewBag.MENSAJE = "Patata Success";
                 ViewBag.MODIF = false;
-                ViewBag.MENSAJE = "Error en: " + ex.Message;
+            }
+            catch (Exception e)
+            {
+                ViewBag.MODIF = false;
+                ViewBag.OK = false;
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Detail: " + e.Message;
                 return RedirectToAction("PaginaDeError");
             }
 
+
+            return View();
         }
-        #endregion
+        
     }
-}
+    }

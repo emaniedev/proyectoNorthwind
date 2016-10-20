@@ -6,16 +6,22 @@
 <h2>Index</h2>
 
 <div class="container">
-    <form method="post" action="" id="form-filtro" title="filtro">
+    <form class="form-group" method="post" action="" id="form-filtro" title="filtro">
+        @if (ViewBag.BORRADO)
+        {
+            <h3 class="success">Se ha borrado el registro</h3>
+        }
         <p class="message">
             Datos del filtro, rellena los datos.
         </p>
-        Apellido :<input type="text" name="Apellido" id="Apellido" value="" placeholder="Apellido" />
-        Nombre :<input type="text" name="Nombre" id="Nombre" value="" placeholder="Nombre" />
-        <button type="submit">Consultar por filtro</button>
+        Apellido :<input class="form-control" type="text" name="Apellido" id="Apellido" value="" placeholder="Apellido" />
+        Nombre :<input class="form-control" type="text" name="Nombre" id="Nombre" value="" placeholder="Nombre" />
+        <hr/>
+        <button class="btn btn-success" type="submit">Consultar por filtro</button>
 
 
     </form>
+    <p>@Html.ActionLink("Dar de alta ->", "Crear") </p>
     
 </div>
 
