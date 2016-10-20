@@ -91,7 +91,9 @@ namespace inicio.CapaDatos
             int retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-        //   ocdEmpleado.AltaEmpleado(con, oenEmpleado);
+
+
+        ///  ocdEmpleado.AltaEmpleado(con, oenEmpleado);
         /// Metodo para insertar un registro en la tabla Alumno
         /// Me devuelve un int (-1=fallo y 1=Bien).
         /// Todos los métodos pueden generar una excepcion.

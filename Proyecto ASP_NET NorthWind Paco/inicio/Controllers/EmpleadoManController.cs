@@ -10,6 +10,8 @@ namespace inicio.Controllers
 {
     public class EmpleadoManController : Controller
     {
+        //---INDEX--
+        #region index
         // GET: EmpleadoMan
         [HttpGet]
         public ActionResult Index()
@@ -20,6 +22,7 @@ namespace inicio.Controllers
             ViewBag.Mensaje = "";
             return View();
         }
+
         // POST: EmpleadoMan
         [HttpPost]
         public ActionResult Index(String Apellido, String Nombre)
@@ -43,7 +46,10 @@ namespace inicio.Controllers
             }
             return View();
         }
-
+        #endregion
+        //---LISTA FILTRO---
+        #region listaFiltro
+        //GET: listafiltro
         public ActionResult ListaFiltro()
         {
             List<enEmpleado> lenEmpleado = new List<enEmpleado>();
@@ -67,6 +73,7 @@ namespace inicio.Controllers
             ViewBag.NumRegistrosFiltro = Session["NumRegistrosfiltro"];
             return View();
         }
+
         // GET: SiguientePagina
         public ActionResult SiguientePagina()
         {
@@ -79,6 +86,9 @@ namespace inicio.Controllers
             }
             return RedirectToAction("ListaFiltro");
         }
+        #endregion
+        //---EDITAR---
+
         // GET: EmpleadoMan
         public ActionResult Editar(int? ID)
         {
@@ -99,6 +109,7 @@ namespace inicio.Controllers
             }
             return View();
         }
+
         // POST: EmpleadoMan
         [HttpPost]
         public ActionResult Editar(int? ID, String Apellido, String Nombre)
@@ -130,6 +141,8 @@ namespace inicio.Controllers
             return View();
         }
 
+        //---BORRAR---
+
         // GET: EmpleadoMan
         public ActionResult Borrar(int? ID)
         {
@@ -157,6 +170,8 @@ namespace inicio.Controllers
             return View();
         }
 
+        //---DETALLE---
+
         // GET: EmpleadoMan
         public ActionResult Detalle(int? ID)
         {
@@ -176,6 +191,9 @@ namespace inicio.Controllers
             }
             return View();
         }
+
+        //--CREAR--
+
         // GET: EmpleadoMan
         [HttpGet]
         public ActionResult Crear()

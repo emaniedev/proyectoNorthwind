@@ -161,6 +161,8 @@ namespace inicio.CapaNegocio
             return (resultado);
         }
         //   ocnEmpleado.AltaEmpleado(oenEmpleado);
+
+
         /// Metodo para insertar un registro en la tabla Empleado
         /// Me devuelve un int (-1=fallo y 1=Bien).
         /// Todos los métodos pueden generar una excepcion.
