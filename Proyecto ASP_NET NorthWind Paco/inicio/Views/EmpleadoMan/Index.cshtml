@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Filtrar empleados";
+}
+
+<div>
+@if (!ViewBag.OK)
+    {
+        <p> ErrorEventArgs: @ViewBag.Mensaje </p>
+    }
+    else
+    {
+        <form method="post" action="" id="form-filtro" title="filtro">
+            <p class="message">
+                ¿datos del filtro? Rellena los datos
+            </p>
+            <input type="text" name="Apellido" id="Apellido" value="" placeholder="Apellildo" />
+            <input type="text" name="Nombre" id="Nombre" value="" placeholder="Nombre" />
+            <button type="submit">Consultar por filtro</button>
+        </form>
+    }
+    <p>
+        @Html.ActionLink("Crear empleado", "Crear")
+    </p>
+</div> 
+

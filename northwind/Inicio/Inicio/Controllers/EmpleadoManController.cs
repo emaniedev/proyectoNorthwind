@@ -19,6 +19,7 @@ namespace Inicio.Controllers
             Session["nPagina"] = 0;//El offset de SQL comienza en 0.
             return View();
         }
+
         // POST: EmpleadoMan
         [HttpPost]//Ponemos esta etiqueta para que sea un post. Por defecto es get.
         public ActionResult Index(String Apellido, String Nombre)
@@ -41,7 +42,7 @@ namespace Inicio.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.MENSAJE = "Error en: " + ex.Message;
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Index: " + ex.Message;
                 return RedirectToAction("PaginaDeError");
             }
            
@@ -69,8 +70,9 @@ namespace Inicio.Controllers
                 ViewBag.MENSAJE = "Patata Success"; 
             }
             catch (Exception ex){
-                ViewBag.MENSAJE = "Error patata: " + ex.Message;
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.listaFiltro: " + ex.Message;
                 ViewBag.OK = false;
+                return RedirectToAction("PaginaDeError");
             }
             return View();
         }
@@ -104,7 +106,7 @@ namespace Inicio.Controllers
 
             try
             {
-                cnEmpleado cnEmpleado = new Negocio.cnEmpleado();
+                cnEmpleado cnEmpleado = new cnEmpleado();
                 oenEmpleados = cnEmpleado.consEmpleadoPorId(id);
                 ViewBag.OK = true;
                 ViewBag.DATOS = oenEmpleados;
@@ -115,8 +117,8 @@ namespace Inicio.Controllers
             {
                 ViewBag.MODIF = false;
                 ViewBag.OK = false;
-                ViewBag.MENSAJE = "Patata con ERROR: " + e.Message;
-
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Edit: " + e.Message;
+                return RedirectToAction("PaginaDeError");
             }
 
 
@@ -129,11 +131,10 @@ namespace Inicio.Controllers
         [HttpPost]
         public ActionResult Edit(int? id, String apellido, String nombre)
         {
+            enEmpleados oenEmpleado = new enEmpleados();
+            cnEmpleado ocnEmpleado = new cnEmpleado();
             try
             {
-                enEmpleados oenEmpleado = new enEmpleados();
-                cnEmpleado ocnEmpleado = new cnEmpleado();
-
                 oenEmpleado.IdEmpleado = id;
                 oenEmpleado.Apellido = apellido;
                 oenEmpleado.Nombre = nombre;
@@ -142,30 +143,19 @@ namespace Inicio.Controllers
 
                 if (resultado == 1)
                 {
-
                     ViewBag.OK = true;
                     ViewBag.DATOS = oenEmpleado;
                     ViewBag.MENSAJE = "Se ha modificado el registro.";
                     ViewBag.MODIF = true;
-
-
                 }
-                else
-                {
-                    ViewBag.MODIF = false;
-                    ViewBag.OK = false;
-                    ViewBag.MENSAJE = "No se pudo editar el registro";
-                }
-
-
-
+                
             }
             catch (Exception e)
             {
                 ViewBag.MODIF = false;
                 ViewBag.OK = false;
-                ViewBag.MENSAJE = "Patata con ERROR: " + e.Message;
-
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Edit: " + e.Message;
+                return RedirectToAction("PaginaDeError");
             }
 
 
@@ -197,7 +187,7 @@ namespace Inicio.Controllers
             {
                 ViewBag.MODIF = false;
                 ViewBag.OK = false;
-                ViewBag.MENSAJE = "Patata con ERROR: " + e.Message;
+                ViewBag.MENSAJE = "Patata con ERROR en EmpleadoManController.Borrar: " + e.Message;
 
             }
 

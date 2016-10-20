@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>IdEmpleado:</dt>
+        <dd>@ViewBag.Datos.IdEmpleado</dd>
+        <dt>Apellido:</dt>
+        <dd>@ViewBag.Datos.Apellido</dd>
+        <dt>Nombre:</dt>
+        <dd>@ViewBag.Datos.Nombre</dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Ir a Editar", "Editar", new { ID = @ViewBag.Datos.IdEmpleado }) |
+    @Html.ActionLink("Listar los empleados", "ListaFiltro")
+</p>

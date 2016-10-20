@@ -1,0 +1,34 @@
+﻿@model inicio.Models.Employees
+@{
+    ViewBag.Title = "Index";
+}
+<p>
+    @Html.ActionLink("Crear empleado", "CrearEF")
+</p>
+<p>Listado de los empleados filtrados</p>
+<p>Total registros filtro: @ViewBag.NumRegistrosFiltro </p>  <!-- @* @ViewBag.NumRegistrosFiltro *@ -->
+
+<table border="1">
+    <tr>
+        <td>IdEmpleado</td>
+        <td>Apellidos</td>
+        <td>Nombre</td>
+    </tr>
+    @foreach (inicio.Models.Employees oEmpleado in ViewBag.Empleados)
+    {
+        <tr>
+            <td>@oEmpleado.EmployeeID</td>
+            <td>@oEmpleado.LastName</td>
+              <td>@oEmpleado.FirstName</td>
+            <td>
+                @Html.ActionLink("Editar: " + @oEmpleado.EmployeeID, "EditarEF", new { ID = @oEmpleado.EmployeeID })
+                <a href="../EmpleadoEF/BorrarEF?ID=@oEmpleado.EmployeeID" onclick="return confirm('¿Estas seguro?');"><button type="submit">Borrar:@oEmpleado.EmployeeID </button></a> |
+                @Html.ActionLink("Detalle: " + @oEmpleado.EmployeeID, "DetalleEF", new { ID = @oEmpleado.EmployeeID })
+            </td> 
+        </tr>
+    }
+</table>
+<p> @Html.ActionLink("Siguiente página", "SiguientePagina")</p>
+<div>
+    @Html.ActionLink("Ir al filtrar", "Index")
+</div>

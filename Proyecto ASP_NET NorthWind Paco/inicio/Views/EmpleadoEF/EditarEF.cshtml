@@ -1,0 +1,26 @@
+﻿@model inicio.Models.Employees
+@{
+    ViewBag.Title = "EditarEF";
+}
+
+<h2>Editar</h2>
+<p>El ID del empleado que se editara es = @ViewBag.Empleado.EmployeeID</p>
+
+<h2>Editar empleado con EF</h2>
+<form method="post" action="" id="form-editar" class="input-wrapper green-gradient glossy" title="Editar">
+    <p class="message">
+        ¿modificar empleado? Rellena los datos
+        <span class="block-arrow"><span></span></span>
+    </p>
+
+    <ul class="inputs black-input large">
+        <li><span class="icon-mail mid-margin-right"></span><input type="text" name="IdEmpleado" id="IdEmpleado" disabled value="@ViewBag.Empleado.EmployeeID" class="input-unstyled" placeholder="IdEmpleado"></li>
+    </ul>
+    <ul class="inputs black-input large">
+        <li><span class="icon-lock mid-margin-right"></span><input type="text" name="Apellido" id="Apellido" value="@ViewBag.Empleado.LastName" class="input-unstyled" placeholder="Apellido" autocomplete="off"></li>
+        <li><span class="icon-lock mid-margin-right"></span><input type="text" name="Nombre" id="Nombre" value="@ViewBag.Empleado.FirstName" class="input-unstyled" placeholder="Nombre" autocomplete="off"></li>
+    </ul>
+
+    <button type="submit" class="button glossy full-width" id="send-editar">Modificar empleado</button>
+
+</form>

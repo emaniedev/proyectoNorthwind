@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Borrar";
+}
+
+<h2>Empleado</h2>
+
+<div>
+    @if (!@ViewBag.respuesta.OK)
+    {
+        <script>alert("Error = @ViewBag.respuesta.Mensaje");</script>
+        <h2>Error generado: @ViewBag.respuesta.Mensaje</h2>
+    }
+    else
+    {
+        <dl class="dl-horizontal">
+            <dt>Error de catch:</dt>
+            <dd>@ViewBag.respuesta.Mensaje</dd>
+            <dt>Resultado:</dt>
+            @if (@ViewBag.respuesta.Datos = -1)
+            {
+                <dd>El resultado del borrado ha sido : @ViewBag.respuesta.Datos</dd>
+            }
+        </dl>
+    }
+</div>
+<p>
+    @Html.ActionLink("Listar los empleados", "ListaFiltro")
+</p>
+
+

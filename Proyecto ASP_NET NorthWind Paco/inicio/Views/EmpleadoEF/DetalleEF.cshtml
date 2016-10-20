@@ -1,0 +1,22 @@
+﻿@model inicio.Models.Employees
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>IdEmpleado:</dt>
+        <dd>@ViewBag.Empleado.EmployeeID</dd>
+        <dt>Apellido:</dt>
+        <dd>@ViewBag.Empleado.LastName</dd>
+        <dt>Nombre:</dt>
+        <dd>@ViewBag.Empleado.FirstName</dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Ir a Editar", "EditarEF", new { ID = @ViewBag.Empleado.EmployeeID }) |
+    @Html.ActionLink("Listar los empleados", "ListaFiltroEF")
+</p>
