@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Crear</h2>
+<div>
+    @if (!ViewBag.OK)
+    {
+        <p> ErrorEventArgs: @ViewBag.Mensaje </p>
+    }
+    else
+    {
+        <form method="post" action="" id="form-crear" class="input-wrapper green-gradient glossy" title="Crear">
+            <p class="message">
+                ¿Empleado nuevo? Rellena los datos
+                <span class="block-arrow"><span></span></span>
+            </p>
+            <ul class="inputs black-input large">
+                <li><span class="icon-lock mid-margin-right"></span><input type="text" name="Apellido" id="Apellido" value="" class="input-unstyled" placeholder="Apellido" autocomplete="off"></li>
+                <li><span class="icon-lock mid-margin-right"></span><input type="text" name="Nombre" id="Nombre" value="" class="input-unstyled" placeholder="Nombre" autocomplete="off"></li>
+            </ul>
+
+            <button type="submit" class="button glossy full-width" id="send-editar">Crear empleado</button>
+        </form>
+    }
+</div>
+

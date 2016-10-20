@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+    WebGrid grid = new WebGrid(source: ViewBag.empleados, rowsPerPage: 3);
+}
+
+<h2>Index2</h2>
+@grid.GetHtml(
+    columns: new[]
+    {grid.Column("EmployeeID"," El IDEmpleadooooooooo"),
+     grid.Column("LastName","El apellido"),
+     grid.Column("FirstName", "El Nombre"),
+     grid.Column("", header: "Acciones",
+        format: @<text>
+            @Html.ActionLink("Editar","Edit", new { id = item.EmployeeID})
+            |
+            @Html.ActionLink("Eliminar","Delete", new { id = item.EmployeeID}) 
+            </text>
+    )
+    }
+    )
+

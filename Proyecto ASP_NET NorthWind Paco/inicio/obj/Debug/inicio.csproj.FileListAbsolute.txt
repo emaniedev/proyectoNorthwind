@@ -1,0 +1,298 @@
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\ApplicationInsights.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\csc.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\vbc.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.pdb
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.pdb
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\ApplicationInsights.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\csc.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Collections.Immutable.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Reflection.Metadata.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\vbc.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.pdb
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.pdb
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\ApplicationInsights.config
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\csc.exe
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Collections.Immutable.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\System.Reflection.Metadata.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\vbc.exe
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\roslyn\VBCSCompiler.exe.config
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll.config
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\inicio.pdb
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\EntityFramework.SqlServer.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.DependencyCollector.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.Web.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.AI.WindowsServer.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.ApplicationInsights.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Razor.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Deployment.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Webpages.Razor.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Helpers.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\bin\System.Web.Mvc.xml
+G:\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+G:\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.dll
+G:\Visual studio 2013\Northwind\inicio\inicio\obj\Debug\inicio.pdb
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.pdb
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\ApplicationInsights.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\csc.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\vbc.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\VBCSCompiler.exe
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.dll.config
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.pdb
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.SqlServer.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Web.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.ApplicationInsights.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Helpers.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Mvc.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Razor.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Deployment.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Razor.dll
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.SqlServer.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Web.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.ApplicationInsights.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Razor.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Deployment.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Razor.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Helpers.xml
+D:\aPaco 2016-2017\DWECliente\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Mvc.xml
+E:\Paco 2016 2017\visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+E:\Paco 2016 2017\visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.dll
+E:\Paco 2016 2017\visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.pdb
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\ApplicationInsights.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\csc.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\System.Collections.Immutable.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\System.Reflection.Metadata.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\vbc.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\VBCSCompiler.exe
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\roslyn\VBCSCompiler.exe.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.dll.config
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\inicio.pdb
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.SqlServer.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.DependencyCollector.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Web.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.WindowsServer.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.ApplicationInsights.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Helpers.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Mvc.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Razor.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Deployment.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Razor.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\EntityFramework.SqlServer.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.DependencyCollector.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.Web.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.AI.WindowsServer.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.ApplicationInsights.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Razor.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Deployment.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Webpages.Razor.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Helpers.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\bin\System.Web.Mvc.xml
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.dll
+E:\aPaco 2016-2017\Visual studio 2013\Northwind1\inicio\inicio\obj\Debug\inicio.pdb
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\ApplicationInsights.config
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\csc.exe
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\System.Collections.Immutable.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\System.Reflection.Metadata.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\vbc.exe
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\VBCSCompiler.exe
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\roslyn\VBCSCompiler.exe.config
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\inicio.dll.config
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\inicio.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\inicio.pdb
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\EntityFramework.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\EntityFramework.SqlServer.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.DependencyCollector.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.Web.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.WindowsServer.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.ApplicationInsights.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.Web.Infrastructure.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Helpers.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Mvc.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Razor.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.Deployment.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.Razor.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\EntityFramework.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\EntityFramework.SqlServer.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.DependencyCollector.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.Web.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.AI.WindowsServer.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.ApplicationInsights.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Razor.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.Deployment.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Webpages.Razor.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Helpers.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\bin\System.Web.Mvc.xml
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\obj\Debug\inicio.csprojResolveAssemblyReference.cache
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\obj\Debug\inicio.dll
+D:\Clase\Repositorios\Cliente\Proyecto ASP_NET NorthWind Paco\inicio\obj\Debug\inicio.pdb

@@ -1,0 +1,27 @@
+﻿@using inicio.EntidadesNegocio
+@{
+    ViewBag.Title = "Editar";
+}
+<div>
+    @if (!ViewBag.OK)
+    {
+        <p> ErrorEventArgs: @ViewBag.Mensaje </p>
+    }
+    else
+    { 
+    <div>
+        <form method="post" action="" id="form-editar" title="Editar">
+            <p class="message">
+                datos del empleado seleccionado para modificar
+            </p>
+            <p>El ID es: @ViewBag.Datos.IdEmpleado</p>
+            <input type="text" name="ID" id="ID" value="@ViewBag.Datos.IdEmpleado" disabled />
+            <input type="text" name="Apellido" id="Apellido" value="@ViewBag.Datos.Apellido" placeholder="Apellildo" />
+            <input type="text" name="Nombre" id="Nombre" value="@ViewBag.Datos.Nombre" placeholder="Nombre" />
+            <button type="submit">Editar empleado</button>
+        </form>
+    </div>
+    }
+</div>
+
+
