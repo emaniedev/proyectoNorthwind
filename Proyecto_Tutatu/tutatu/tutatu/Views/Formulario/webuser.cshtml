@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "webuser";
+}
+
+<h2>webuser</h2>
+
+<div class="container">
+    <form action="" method="post" class="form-horizontal" title="Nuevo WebUser">
+        <p>Introduce los datos acontinuación.</p>
+        <div class="form-group">            
+            Nickname: <input type="text" class="form-control" name="nick" id="nick" value="" placeholder="Nickname"/>
+            Password: <input type="password" class="form-control" name="pass" id="pass" value="" placeholder="Password" />
+        </div>
+        <hr/>
+        <div class="form-group">
+            Nombre: <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre" />
+            Apellidos: <input type="text" class="form-control" name="apellido" id="apellido" value="" placeholder="Apellido" />
+            <hr/>
+            E-mail: <input type="email" class="form-control" name="mail" id="mail" value="" placeholder="example@domain.com" />
+            Fecha de nacimiento: <input type="datetime" class="form-control" name="fecha" id="fecha" value="" placeholder="" />
+            <div class="form-group">
+                <label>
+                    Sexo:<br />
+                    Hombre: <input type="radio" class="radio-inline" name="sexo" value="Hombre" /><br />
+                    Mujer: <input type="radio" class="radio-inline" name="sexo" value="Mujer"  /><br />
+                    Indiferente: <input type="radio" class="radio-inline" name="sexo" value="Indefinido"/><br />
+                </label>
+                
+            </div>
+            <input type="submit" class="btn btn-success" value="Enviar" />
+        </div>
+    </form>
+</div>
