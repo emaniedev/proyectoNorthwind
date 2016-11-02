@@ -14,7 +14,8 @@ namespace Inicio.Negocio
     {
        // private string CadenaConexion = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Northwind.mdf;Integrated Security=True"; //escapar las barras 
        // private string CadenaConexion = "Data Source=.\\sqlexpress;Initial Catalog=Northwind;User ID=sa";
-        string CadenaConexion = ConfigurationManager.ConnectionStrings["connLocal1"].ConnectionString;
+        string CadenaConexion = ConfigurationManager.ConnectionStrings["connCasa"].ConnectionString;
+        string validacionEmpleado;
 
         public List<enEmpleados> listar(){
             List<enEmpleados> lenEmpleado = null;
@@ -176,6 +177,54 @@ namespace Inicio.Negocio
             }
 
             return resultado;
+        }
+
+        //Crear Empleado
+        /// Metodo para insertar un registro en la tabla Empleado
+        /// Me devuelve un int (-1=fallo y 1=Bien).
+        /// Todos los métodos pueden generar una excepcion.
+        /// En el objeto oenEmpleado que recibe, IdEmpleado=0 porque no se usa.
+        public int altaEmpleado(enEmpleados oenEmpleado)
+        {
+            //  Validamos los datos para dar alta del empleado
+            int resultado = -1;
+            if (ValidarEmpleado(oenEmpleado))
+            {
+                // Modificamos los datos del empleado que me llega como parámetro.
+                using (SqlConnection con = new SqlConnection(CadenaConexion))
+                {
+                    try
+                    {
+                        con.Open();
+                        cdEmpleado ocdEmpleado = new cdEmpleado();
+                        resultado = ocdEmpleado.altaEmpleado(con, oenEmpleado);
+                        con.Close();
+                    }
+                    catch (SqlException ex)
+                    {
+                        throw new Exception("Error en SQLException cnEmpleado.altaEmpleado =" + ex.Message);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Error en cnEmpleado.altaEmpleado = " + ex.Message);
+                    }
+                } //con.close(); con.Dispose();
+            }
+            else
+            {
+                throw new Exception("Error en cnEmpleado.AltaEmplado => validación datos:" + validacionEmpleado);
+            }
+            return (resultado);
+        }
+
+        private bool ValidarEmpleado(enEmpleados oenEmpleado)
+        {
+            if (string.IsNullOrEmpty(oenEmpleado.Nombre)) validacionEmpleado += "El campo Nombre es obligatorio";
+            if (string.IsNullOrEmpty(oenEmpleado.Apellido)) validacionEmpleado += "El campo Apellido es obligatorio";
+            if (validacionEmpleado == null)
+                return true;
+            else
+                return false;
         }
 
 

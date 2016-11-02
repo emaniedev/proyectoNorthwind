@@ -259,7 +259,9 @@
     <Content Include="Views\EmpleadoEF\paginaError.cshtml" />
     <Content Include="Views\EmpleadoEF\listaFiltro.cshtml" />
     <Content Include="Views\EmpleadoEF\Details.cshtml" />
-    <Content Include="Views\EmpleadoMan\paginaError.cshtml" />
+    <Content Include="Views\EmpleadoMan\PaginaError.cshtml" />
+    <Content Include="Views\EmpleadoMan\Detail.cshtml" />
+    <Content Include="Views\EmpleadoMan\Crear.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

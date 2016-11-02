@@ -30,20 +30,21 @@
                     <td>@oenEmpleados.Apellido</td>
                     <td>@oenEmpleados.Nombre</td>
                     <td>
-                        @Html.ActionLink("Editar:"+oenEmpleados.IdEmpleado ,"Edit", new { id = oenEmpleados.IdEmpleado}) 
-                        @Html.ActionLink("Detalle" + oenEmpleados.IdEmpleado, "Detalle", new { id = oenEmpleados.IdEmpleado}) 
-                        <a href="~/Views/EmpleadoMan/Borrar?ID=@oenEmpleados.IdEmpleado" onclick="return confirm('Estas seguro');"<button type="submit">Borrar: @oenEmpleados.IdEmpleado</button>
+                        @Html.ActionLink("Editar: "+oenEmpleados.IdEmpleado ,"Edit", new { id = oenEmpleados.IdEmpleado}) 
+                        @Html.ActionLink("Detalle: " + oenEmpleados.IdEmpleado, "Detail", new { id = oenEmpleados.IdEmpleado}) 
+                        <a href="~/EmpleadoMan/Borrar?ID=@oenEmpleados.IdEmpleado" onclick="return confirm('Estas seguro de querer borrar este registro?');"<button type="submit">Borrar: @oenEmpleados.IdEmpleado</button>
                     </td>
                 </tr>
             }
         </table>
+        <p>@Html.ActionLink("Dar de alta ->", "Crear") </p>
 
         <p>@Html.ActionLink("Pagina siguiente", "siguientePagina")</p>
 
         <div class="container">
-            <h5 class="info">
+            <h4 class="info">
                 @Html.ActionLink("Volver a buscar", "Index")
-            </h5>
+            </h4>
             
         </div>
         
