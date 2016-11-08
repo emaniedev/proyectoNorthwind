@@ -170,6 +170,7 @@
     <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\FormularioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
     <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">
@@ -238,6 +239,7 @@
     <Content Include="Views\Videos\Index.cshtml" />
     <Content Include="Views\Noticias\Index.cshtml" />
     <Content Include="Views\Contacto\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

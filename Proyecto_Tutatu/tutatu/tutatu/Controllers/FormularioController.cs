@@ -12,11 +12,13 @@ namespace tutatu.Controllers
         // GET: Formulario
         public ActionResult Index()
         {
+            ViewBag.ACTIVO = "signup";
             return View();
         }
         //GET: WEBUSER
         public ActionResult webuser()
         {
+            ViewBag.ACTIVO = "signup";
             return View();
         }
 
@@ -43,6 +45,7 @@ namespace tutatu.Controllers
         //GET: EMPRESA
         public ActionResult empresa()
         {
+            ViewBag.ACTIVO = "signup";
             return View();
         }
 

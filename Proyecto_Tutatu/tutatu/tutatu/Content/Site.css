@@ -22,6 +22,8 @@ textarea {
     border-color: #080808;
 }
 
+
+
 /*
 ####    Personalizo el nav-bar del layout   ####
 */
@@ -75,14 +77,13 @@ textarea {
     color:orangered !important;
     background-color: rgba(51,51,51,0.9) !important;
 }
-.btn-default a {
-    color:navajowhite !important;
+.button {
     text-decoration:none;
 }
-.btn-default a {
-    color:orangered !important;
+.button:hover {
     text-decoration:none;
 }
+
 
 
 
