@@ -240,6 +240,8 @@
     <Content Include="Views\Noticias\Index.cshtml" />
     <Content Include="Views\Contacto\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\webuser.cshtml" />
+    <Content Include="Views\Login\empresa.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using tutatu.Models;
 
 namespace tutatu.Controllers
 {
@@ -26,17 +27,8 @@ namespace tutatu.Controllers
         [HttpPost]
         public ActionResult webuser(string nick, string pass)
         {
-            EFwebuser omWebuser = new EFwebuser();
-            try
-            {
-                omWebuser.crearWebUser(nick, pass, nombre, apellido, mail, fecha, sexo);
-            }
-            catch (Exception e)
-            {
-                ViewBag.MENSAJE = e.Message;
-                return View("paginaError");
-
-            }
+            
+            
 
 
             return RedirectToAction("Index");

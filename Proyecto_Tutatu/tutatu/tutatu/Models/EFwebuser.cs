@@ -56,12 +56,35 @@ namespace tutatu.Models
     }
 
         /// <summary>
-        /// Autentica un usuario en la web.
+        /// Autentica un usuario en la web. Devuelve un 1 si el usuario se ha logueado correctamente y 0 en caso contrario.
         /// </summary>
         /// <param name="nick"></param>
         /// <param name="pass"></param>
-        public void loguear (string nick, string pass)
+        public int loguear (string nick, string pass)
         {
+            int logued = 0;
+            usuarios omWebuserIn = new usuarios();
+            usuarios omWebuserBD = new usuarios();
+
+            omWebuserIn.nickname = nick;
+            omWebuserIn.pass1 = pass;
+
+            try
+            {
+                omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick select usr).Single();
+
+                if (omWebuserBD.pass1 == omWebuserIn.pass1)
+                {
+                    logued = 1;   
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return logued;
 
         }
 }
