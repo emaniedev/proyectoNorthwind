@@ -15,8 +15,8 @@ namespace tutatu.Models
     public partial class tatuaje
     {
         public short id_tatoo { get; set; }
-        public short id_wu { get; set; }
-        public short id_tat { get; set; }
+        public Nullable<short> id_wu { get; set; }
+        public Nullable<short> id_tat { get; set; }
         public string style_tatoo { get; set; }
         public bool color_tatoo { get; set; }
         public System.DateTime date_tatoo { get; set; }

@@ -25,13 +25,19 @@
 
                     <li id="video" class="">@Html.ActionLink("Videos", "Index", "Videos")</li>
                     <li id="noticia" class="">@Html.ActionLink("Noticias", "Index", "Noticias")</li>
-                    <li id="contacto" class="">@Html.ActionLink("Contacto", "Index", "Contacto")</li>
+                    <li id="contacto" class="">@Html.ActionLink("Usuarios", "Index", "Contacto")</li>
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    
+                    @if (Request.Cookies.Get("usr") != null)
+                    {
+                        <li id="login"><a href="/Login/logout"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
+                    }
+                    else
+                    {
                     <li id="signup"><a href="/Formulario"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li id="login"><a href="/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    }
                 </ul>
             </div>
         </div>

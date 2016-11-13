@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using tutatu.Models;
 
 namespace tutatu.Models
@@ -60,32 +61,54 @@ namespace tutatu.Models
         /// </summary>
         /// <param name="nick"></param>
         /// <param name="pass"></param>
-        public int loguear (string nick, string pass)
+        public short loguear (string nick, string pass, bool check)
         {
-            int logued = 0;
+            
             usuarios omWebuserIn = new usuarios();
             usuarios omWebuserBD = new usuarios();
 
             omWebuserIn.nickname = nick;
             omWebuserIn.pass1 = pass;
-
+            omWebuserBD.nickname = "";
+            omWebuserBD.pass1 = "";
             try
             {
-                omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick select usr).Single();
+                omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick && usr.pass1 == pass select usr).FirstOrDefault();
 
-                if (omWebuserBD.pass1 == omWebuserIn.pass1)
+                if (omWebuserBD != null)
                 {
-                    logued = 1;   
+                    if (omWebuserBD.pass1 == omWebuserIn.pass1)
+                    {
+
+                        
+                        
+                        
+                        
+                        
+
+                    }
+                    return omWebuserBD.id_u;
                 }
+                else
+                {
+                    return  -1;
+                    throw new Exception("no se ha encontrado ninguna coincidencia.");
+                }
+
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                throw;
+                throw e;
             }
 
-            return logued;
+            
 
+        }
+
+        public void desloguear()
+        {
+            
         }
 }
   

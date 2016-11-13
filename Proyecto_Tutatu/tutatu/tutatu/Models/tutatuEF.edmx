@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="tutatuEF1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="comentario">
+          <Key>
+            <PropertyRef Name="id-com" />
+          </Key>
+          <Property Name="id-com" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-u" Type="smallint" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="zone-id" Type="smallint" Nullable="false" />
+          <Property Name="cont-id" Type="smallint" />
+          <Property Name="content" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="empresa">
+          <Key>
+            <PropertyRef Name="id-emp" />
+          </Key>
+          <Property Name="id-emp" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-u" Type="smallint" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="cif" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="200" />
+          <Property Name="phone" Type="varchar" MaxLength="15" />
+          <Property Name="owner" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="web" Type="varchar" MaxLength="100" />
+          <Property Name="services" Type="varchar(max)" Nullable="false" />
+          <Property Name="trayectoria" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="noticia">
+          <Key>
+            <PropertyRef Name="id-not" />
+          </Key>
+          <Property Name="id-not" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-u" Type="smallint" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="zone-id" Type="smallint" Nullable="false" />
+          <Property Name="cont-id" Type="smallint" />
+          <Property Name="asunto" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="content" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tatuador">
+          <Key>
+            <PropertyRef Name="id-tat" />
+          </Key>
+          <Property Name="id-tat" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-u" Type="smallint" Nullable="false" />
+          <Property Name="id-emp" Type="smallint" Nullable="false" />
+          <Property Name="fname-tat" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sname-tat" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email-tat" Type="varchar" MaxLength="100" />
+          <Property Name="phone-tat" Type="varchar" MaxLength="15" />
+          <Property Name="style-tat" Type="varchar(max)" />
+          <Property Name="ink-tat" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="designer-tat" Type="bit" Nullable="false" />
+          <Property Name="trayectory-tat" Type="varchar(max)" />
+          <Property Name="study-tat" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tatuaje">
+          <Key>
+            <PropertyRef Name="id-tatoo" />
+          </Key>
+          <Property Name="id-tatoo" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-wu" Type="smallint" />
+          <Property Name="id-tat" Type="smallint" />
+          <Property Name="style-tatoo" Type="varchar" MaxLength="100" />
+          <Property Name="color-tatoo" Type="bit" Nullable="false" />
+          <Property Name="date-tatoo" Type="datetime" Nullable="false" />
+          <Property Name="time-tatoo" Type="time" Precision="7" Nullable="false" />
+          <Property Name="price-tatoo" Type="money" />
+          <Property Name="shoot-date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id-u" />
+          </Key>
+          <Property Name="id-u" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nickname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="pass1" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="pass2" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="date-reg" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="webuser">
+          <Key>
+            <PropertyRef Name="id-wu" />
+          </Key>
+          <Property Name="id-wu" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id-u" Type="smallint" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="b-date" Type="datetime" />
+          <Property Name="sexo" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="zona">
+          <Key>
+            <PropertyRef Name="id-zone" />
+          </Key>
+          <Property Name="id-zone" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_comentario_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id-u" />
+            </Principal>
+            <Dependent Role="comentario">
+              <PropertyRef Name="id-u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_comentario_zona">
+          <End Role="zona" Type="Self.zona" Multiplicity="1" />
+          <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="zona">
+              <PropertyRef Name="id-zone" />
+            </Principal>
+            <Dependent Role="comentario">
+              <PropertyRef Name="zone-id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_empresa_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="empresa" Type="Self.empresa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id-u" />
+            </Principal>
+            <Dependent Role="empresa">
+              <PropertyRef Name="id-u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noticia_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id-u" />
+            </Principal>
+            <Dependent Role="noticia">
+              <PropertyRef Name="id-u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noticia_zona">
+          <End Role="zona" Type="Self.zona" Multiplicity="1" />
+          <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="zona">
+              <PropertyRef Name="id-zone" />
+            </Principal>
+            <Dependent Role="noticia">
+              <PropertyRef Name="zone-id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuador_empresa">
+          <End Role="empresa" Type="Self.empresa" Multiplicity="1" />
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="empresa">
+              <PropertyRef Name="id-emp" />
+            </Principal>
+            <Dependent Role="tatuador">
+              <PropertyRef Name="id-emp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuador_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id-u" />
+            </Principal>
+            <Dependent Role="tatuador">
+              <PropertyRef Name="id-u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuaje_tatuador">
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="0..1" />
+          <End Role="tatuaje" Type="Self.tatuaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tatuador">
+              <PropertyRef Name="id-tat" />
+            </Principal>
+            <Dependent Role="tatuaje">
+              <PropertyRef Name="id-tat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuaje_webuser">
+          <End Role="webuser" Type="Self.webuser" Multiplicity="0..1" />
+          <End Role="tatuaje" Type="Self.tatuaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="webuser">
+              <PropertyRef Name="id-wu" />
+            </Principal>
+            <Dependent Role="tatuaje">
+              <PropertyRef Name="id-wu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_webuser_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="webuser" Type="Self.webuser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id-u" />
+            </Principal>
+            <Dependent Role="webuser">
+              <PropertyRef Name="id-u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="tutatuEF1StoreContainer">
+          <EntitySet Name="comentario" EntityType="Self.comentario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="empresa" EntityType="Self.empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="noticia" EntityType="Self.noticia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tatuador" EntityType="Self.tatuador" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tatuaje" EntityType="Self.tatuaje" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="webuser" EntityType="Self.webuser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="zona" EntityType="Self.zona" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_comentario_usuarios" Association="Self.FK_comentario_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="comentario" EntitySet="comentario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_comentario_zona" Association="Self.FK_comentario_zona">
+            <End Role="zona" EntitySet="zona" />
+            <End Role="comentario" EntitySet="comentario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_empresa_usuarios" Association="Self.FK_empresa_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="empresa" EntitySet="empresa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noticia_usuarios" Association="Self.FK_noticia_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="noticia" EntitySet="noticia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noticia_zona" Association="Self.FK_noticia_zona">
+            <End Role="zona" EntitySet="zona" />
+            <End Role="noticia" EntitySet="noticia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuador_empresa" Association="Self.FK_tatuador_empresa">
+            <End Role="empresa" EntitySet="empresa" />
+            <End Role="tatuador" EntitySet="tatuador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuador_usuarios" Association="Self.FK_tatuador_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="tatuador" EntitySet="tatuador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuaje_tatuador" Association="Self.FK_tatuaje_tatuador">
+            <End Role="tatuador" EntitySet="tatuador" />
+            <End Role="tatuaje" EntitySet="tatuaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuaje_webuser" Association="Self.FK_tatuaje_webuser">
+            <End Role="webuser" EntitySet="webuser" />
+            <End Role="tatuaje" EntitySet="tatuaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_webuser_usuarios" Association="Self.FK_webuser_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="webuser" EntitySet="webuser" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="tutatuEF1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="comentario">
+          <Key>
+            <PropertyRef Name="id_com" />
+          </Key>
+          <Property Name="id_com" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_u" Type="Int16" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="zone_id" Type="Int16" Nullable="false" />
+          <Property Name="cont_id" Type="Int16" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK_comentario_usuarios" FromRole="comentario" ToRole="usuarios" />
+          <NavigationProperty Name="zona" Relationship="Self.FK_comentario_zona" FromRole="comentario" ToRole="zona" />
+        </EntityType>
+        <EntityType Name="empresa">
+          <Key>
+            <PropertyRef Name="id_emp" />
+          </Key>
+          <Property Name="id_emp" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_u" Type="Int16" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cif" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="owner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="web" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="services" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="trayectoria" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK_empresa_usuarios" FromRole="empresa" ToRole="usuarios" />
+          <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuador_empresa" FromRole="empresa" ToRole="tatuador" />
+        </EntityType>
+        <EntityType Name="noticia">
+          <Key>
+            <PropertyRef Name="id_not" />
+          </Key>
+          <Property Name="id_not" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_u" Type="Int16" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="zone_id" Type="Int16" Nullable="false" />
+          <Property Name="cont_id" Type="Int16" />
+          <Property Name="asunto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK_noticia_usuarios" FromRole="noticia" ToRole="usuarios" />
+          <NavigationProperty Name="zona" Relationship="Self.FK_noticia_zona" FromRole="noticia" ToRole="zona" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tatuador">
+          <Key>
+            <PropertyRef Name="id_tat" />
+          </Key>
+          <Property Name="id_tat" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_u" Type="Int16" Nullable="false" />
+          <Property Name="id_emp" Type="Int16" Nullable="false" />
+          <Property Name="fname_tat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sname_tat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email_tat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="phone_tat" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="style_tat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ink_tat" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="designer_tat" Type="Boolean" Nullable="false" />
+          <Property Name="trayectory_tat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="study_tat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="empresa" Relationship="Self.FK_tatuador_empresa" FromRole="tatuador" ToRole="empresa" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK_tatuador_usuarios" FromRole="tatuador" ToRole="usuarios" />
+          <NavigationProperty Name="tatuaje" Relationship="Self.FK_tatuaje_tatuador" FromRole="tatuador" ToRole="tatuaje" />
+        </EntityType>
+        <EntityType Name="tatuaje">
+          <Key>
+            <PropertyRef Name="id_tatoo" />
+          </Key>
+          <Property Name="id_tatoo" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_wu" Type="Int16" />
+          <Property Name="id_tat" Type="Int16" />
+          <Property Name="style_tatoo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="color_tatoo" Type="Boolean" Nullable="false" />
+          <Property Name="date_tatoo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="time_tatoo" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="price_tatoo" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="shoot_date" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuaje_tatuador" FromRole="tatuaje" ToRole="tatuador" />
+          <NavigationProperty Name="webuser" Relationship="Self.FK_tatuaje_webuser" FromRole="tatuaje" ToRole="webuser" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id_u" />
+          </Key>
+          <Property Name="id_u" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pass1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pass2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date_reg" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="comentario" Relationship="Self.FK_comentario_usuarios" FromRole="usuarios" ToRole="comentario" />
+          <NavigationProperty Name="empresa" Relationship="Self.FK_empresa_usuarios" FromRole="usuarios" ToRole="empresa" />
+          <NavigationProperty Name="noticia" Relationship="Self.FK_noticia_usuarios" FromRole="usuarios" ToRole="noticia" />
+          <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuador_usuarios" FromRole="usuarios" ToRole="tatuador" />
+          <NavigationProperty Name="webuser" Relationship="Self.FK_webuser_usuarios" FromRole="usuarios" ToRole="webuser" />
+        </EntityType>
+        <EntityType Name="webuser">
+          <Key>
+            <PropertyRef Name="id_wu" />
+          </Key>
+          <Property Name="id_wu" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_u" Type="Int16" Nullable="false" />
+          <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="b_date" Type="DateTime" Precision="3" />
+          <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tatuaje" Relationship="Self.FK_tatuaje_webuser" FromRole="webuser" ToRole="tatuaje" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK_webuser_usuarios" FromRole="webuser" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="zona">
+          <Key>
+            <PropertyRef Name="id_zone" />
+          </Key>
+          <Property Name="id_zone" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="comentario" Relationship="Self.FK_comentario_zona" FromRole="zona" ToRole="comentario" />
+          <NavigationProperty Name="noticia" Relationship="Self.FK_noticia_zona" FromRole="zona" ToRole="noticia" />
+        </EntityType>
+        <Association Name="FK_comentario_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_u" />
+            </Principal>
+            <Dependent Role="comentario">
+              <PropertyRef Name="id_u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_comentario_zona">
+          <End Role="zona" Type="Self.zona" Multiplicity="1" />
+          <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="zona">
+              <PropertyRef Name="id_zone" />
+            </Principal>
+            <Dependent Role="comentario">
+              <PropertyRef Name="zone_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_empresa_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="empresa" Type="Self.empresa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_u" />
+            </Principal>
+            <Dependent Role="empresa">
+              <PropertyRef Name="id_u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuador_empresa">
+          <End Role="empresa" Type="Self.empresa" Multiplicity="1" />
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="empresa">
+              <PropertyRef Name="id_emp" />
+            </Principal>
+            <Dependent Role="tatuador">
+              <PropertyRef Name="id_emp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noticia_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_u" />
+            </Principal>
+            <Dependent Role="noticia">
+              <PropertyRef Name="id_u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noticia_zona">
+          <End Role="zona" Type="Self.zona" Multiplicity="1" />
+          <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="zona">
+              <PropertyRef Name="id_zone" />
+            </Principal>
+            <Dependent Role="noticia">
+              <PropertyRef Name="zone_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuador_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_u" />
+            </Principal>
+            <Dependent Role="tatuador">
+              <PropertyRef Name="id_u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuaje_tatuador">
+          <End Role="tatuador" Type="Self.tatuador" Multiplicity="0..1" />
+          <End Role="tatuaje" Type="Self.tatuaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tatuador">
+              <PropertyRef Name="id_tat" />
+            </Principal>
+            <Dependent Role="tatuaje">
+              <PropertyRef Name="id_tat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tatuaje_webuser">
+          <End Role="webuser" Type="Self.webuser" Multiplicity="0..1" />
+          <End Role="tatuaje" Type="Self.tatuaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="webuser">
+              <PropertyRef Name="id_wu" />
+            </Principal>
+            <Dependent Role="tatuaje">
+              <PropertyRef Name="id_wu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_webuser_usuarios">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="webuser" Type="Self.webuser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_u" />
+            </Principal>
+            <Dependent Role="webuser">
+              <PropertyRef Name="id_u" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="tutatuEF" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="comentario" EntityType="Self.comentario" />
+          <EntitySet Name="empresa" EntityType="Self.empresa" />
+          <EntitySet Name="noticia" EntityType="Self.noticia" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="tatuador" EntityType="Self.tatuador" />
+          <EntitySet Name="tatuaje" EntityType="Self.tatuaje" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+          <EntitySet Name="webuser" EntityType="Self.webuser" />
+          <EntitySet Name="zona" EntityType="Self.zona" />
+          <AssociationSet Name="FK_comentario_usuarios" Association="Self.FK_comentario_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="comentario" EntitySet="comentario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_comentario_zona" Association="Self.FK_comentario_zona">
+            <End Role="zona" EntitySet="zona" />
+            <End Role="comentario" EntitySet="comentario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_empresa_usuarios" Association="Self.FK_empresa_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="empresa" EntitySet="empresa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuador_empresa" Association="Self.FK_tatuador_empresa">
+            <End Role="empresa" EntitySet="empresa" />
+            <End Role="tatuador" EntitySet="tatuador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noticia_usuarios" Association="Self.FK_noticia_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="noticia" EntitySet="noticia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noticia_zona" Association="Self.FK_noticia_zona">
+            <End Role="zona" EntitySet="zona" />
+            <End Role="noticia" EntitySet="noticia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuador_usuarios" Association="Self.FK_tatuador_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="tatuador" EntitySet="tatuador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuaje_tatuador" Association="Self.FK_tatuaje_tatuador">
+            <End Role="tatuador" EntitySet="tatuador" />
+            <End Role="tatuaje" EntitySet="tatuaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tatuaje_webuser" Association="Self.FK_tatuaje_webuser">
+            <End Role="webuser" EntitySet="webuser" />
+            <End Role="tatuaje" EntitySet="tatuaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_webuser_usuarios" Association="Self.FK_webuser_usuarios">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="webuser" EntitySet="webuser" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(tutatuEF1.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(tutatuEF1.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="tutatuEF1StoreContainer" CdmEntityContainer="tutatuEF">
+          <EntitySetMapping Name="comentario">
+            <EntityTypeMapping TypeName="tutatuEF1.comentario">
+              <MappingFragment StoreEntitySet="comentario">
+                <ScalarProperty Name="id_com" ColumnName="id-com" />
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="zone_id" ColumnName="zone-id" />
+                <ScalarProperty Name="cont_id" ColumnName="cont-id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="empresa">
+            <EntityTypeMapping TypeName="tutatuEF1.empresa">
+              <MappingFragment StoreEntitySet="empresa">
+                <ScalarProperty Name="id_emp" ColumnName="id-emp" />
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="cif" ColumnName="cif" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="owner" ColumnName="owner" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="web" ColumnName="web" />
+                <ScalarProperty Name="services" ColumnName="services" />
+                <ScalarProperty Name="trayectoria" ColumnName="trayectoria" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="noticia">
+            <EntityTypeMapping TypeName="tutatuEF1.noticia">
+              <MappingFragment StoreEntitySet="noticia">
+                <ScalarProperty Name="id_not" ColumnName="id-not" />
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="zone_id" ColumnName="zone-id" />
+                <ScalarProperty Name="cont_id" ColumnName="cont-id" />
+                <ScalarProperty Name="asunto" ColumnName="asunto" />
+                <ScalarProperty Name="content" ColumnName="content" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="tutatuEF1.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tatuador">
+            <EntityTypeMapping TypeName="tutatuEF1.tatuador">
+              <MappingFragment StoreEntitySet="tatuador">
+                <ScalarProperty Name="id_tat" ColumnName="id-tat" />
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="id_emp" ColumnName="id-emp" />
+                <ScalarProperty Name="fname_tat" ColumnName="fname-tat" />
+                <ScalarProperty Name="sname_tat" ColumnName="sname-tat" />
+                <ScalarProperty Name="email_tat" ColumnName="email-tat" />
+                <ScalarProperty Name="phone_tat" ColumnName="phone-tat" />
+                <ScalarProperty Name="style_tat" ColumnName="style-tat" />
+                <ScalarProperty Name="ink_tat" ColumnName="ink-tat" />
+                <ScalarProperty Name="designer_tat" ColumnName="designer-tat" />
+                <ScalarProperty Name="trayectory_tat" ColumnName="trayectory-tat" />
+                <ScalarProperty Name="study_tat" ColumnName="study-tat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tatuaje">
+            <EntityTypeMapping TypeName="tutatuEF1.tatuaje">
+              <MappingFragment StoreEntitySet="tatuaje">
+                <ScalarProperty Name="id_tatoo" ColumnName="id-tatoo" />
+                <ScalarProperty Name="id_wu" ColumnName="id-wu" />
+                <ScalarProperty Name="id_tat" ColumnName="id-tat" />
+                <ScalarProperty Name="style_tatoo" ColumnName="style-tatoo" />
+                <ScalarProperty Name="color_tatoo" ColumnName="color-tatoo" />
+                <ScalarProperty Name="date_tatoo" ColumnName="date-tatoo" />
+                <ScalarProperty Name="time_tatoo" ColumnName="time-tatoo" />
+                <ScalarProperty Name="price_tatoo" ColumnName="price-tatoo" />
+                <ScalarProperty Name="shoot_date" ColumnName="shoot-date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="tutatuEF1.usuarios">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="pass1" ColumnName="pass1" />
+                <ScalarProperty Name="pass2" ColumnName="pass2" />
+                <ScalarProperty Name="date_reg" ColumnName="date-reg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="webuser">
+            <EntityTypeMapping TypeName="tutatuEF1.webuser">
+              <MappingFragment StoreEntitySet="webuser">
+                <ScalarProperty Name="id_wu" ColumnName="id-wu" />
+                <ScalarProperty Name="id_u" ColumnName="id-u" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="sname" ColumnName="sname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="b_date" ColumnName="b-date" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="zona">
+            <EntityTypeMapping TypeName="tutatuEF1.zona">
+              <MappingFragment StoreEntitySet="zona">
+                <ScalarProperty Name="id_zone" ColumnName="id-zone" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="tutatuEF1.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="tutatuEF1.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="tutatuEF1.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="tutatuEF1.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="tutatuEF1.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="tutatuEF1.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="tutatuEF1.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="tutatuEF1.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="tutatuEF1.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

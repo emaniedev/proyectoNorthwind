@@ -134,26 +134,26 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\EFtutatu.Context.tt">
+    <Content Include="Models\tutatuEF.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFtutatu.edmx</DependentUpon>
-      <LastGenOutput>EFtutatu.Context.cs</LastGenOutput>
+      <DependentUpon>tutatuEF.edmx</DependentUpon>
+      <LastGenOutput>tutatuEF.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\EFtutatu.tt">
+    <Content Include="Models\tutatuEF.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFtutatu.edmx</DependentUpon>
-      <LastGenOutput>EFtutatu.cs</LastGenOutput>
+      <DependentUpon>tutatuEF.edmx</DependentUpon>
+      <LastGenOutput>tutatuEF.cs</LastGenOutput>
     </Content>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\EFtutatu.edmx">
+    <EntityDeploy Include="Models\tutatuEF.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EFtutatu.Designer.cs</LastGenOutput>
+      <LastGenOutput>tutatuEF.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\EFtutatu.edmx.diagram">
-      <DependentUpon>EFtutatu.edmx</DependentUpon>
+    <Content Include="Models\tutatuEF.edmx.diagram">
+      <DependentUpon>tutatuEF.edmx</DependentUpon>
     </Content>
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\FormularioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -177,48 +178,55 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\comentario.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EFempresa.cs" />
-    <Compile Include="Models\EFtutatu.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFtutatu.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EFtutatu.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFtutatu.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EFtutatu.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFtutatu.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\EFnoticia.cs" />
     <Compile Include="Models\EFwebuser.cs" />
     <Compile Include="Models\empresa.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\noticia.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>tutatuEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tatuador.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tatuaje.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tutatuEF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tutatuEF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tutatuEF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tutatuEF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tutatuEF.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\usuarios.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\webuser.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\zona.cs">
-      <DependentUpon>EFtutatu.tt</DependentUpon>
+      <DependentUpon>tutatuEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -242,6 +250,9 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\webuser.cshtml" />
     <Content Include="Views\Login\empresa.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Noticias\insertar.cshtml" />
+    <Content Include="Views\Login\logout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
