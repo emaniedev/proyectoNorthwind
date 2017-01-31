@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tutatuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="comentario">
+    <Key>
+      <PropertyRef Name="id_com" />
+    </Key>
+    <Property Name="id_com" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_u" Type="Int16" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="zone_id" Type="Int16" Nullable="false" />
+    <Property Name="cont_id" Type="Int16" />
+    <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_comentario_usuarios" FromRole="comentario" ToRole="usuarios" />
+    <NavigationProperty Name="zona" Relationship="Self.FK_comentario_zona" FromRole="comentario" ToRole="zona" />
+  </EntityType>
+  <EntityType Name="empresa">
+    <Key>
+      <PropertyRef Name="id_emp" />
+    </Key>
+    <Property Name="id_emp" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_u" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cif" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="owner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="web" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="services" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="trayectoria" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_empresa_usuarios" FromRole="empresa" ToRole="usuarios" />
+    <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuador_empresa" FromRole="empresa" ToRole="tatuador" />
+  </EntityType>
+  <EntityType Name="noticia">
+    <Key>
+      <PropertyRef Name="id_not" />
+    </Key>
+    <Property Name="id_not" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_u" Type="Int16" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="zone_id" Type="Int16" Nullable="false" />
+    <Property Name="cont_id" Type="Int16" />
+    <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_noticia_usuarios" FromRole="noticia" ToRole="usuarios" />
+    <NavigationProperty Name="zona" Relationship="Self.FK_noticia_zona" FromRole="noticia" ToRole="zona" />
+  </EntityType>
+  <EntityType Name="tatuador">
+    <Key>
+      <PropertyRef Name="id_tat" />
+    </Key>
+    <Property Name="id_tat" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_u" Type="Int16" Nullable="false" />
+    <Property Name="id_emp" Type="Int16" Nullable="false" />
+    <Property Name="fname_tat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sname_tat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email_tat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phone_tat" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="style_tat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ink_tat" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="designer_tat" Type="Boolean" Nullable="false" />
+    <Property Name="trayectory_tat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="study_tat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="empresa" Relationship="Self.FK_tatuador_empresa" FromRole="tatuador" ToRole="empresa" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_tatuador_usuarios" FromRole="tatuador" ToRole="usuarios" />
+    <NavigationProperty Name="tatuaje" Relationship="Self.FK_tatuaje_tatuador" FromRole="tatuador" ToRole="tatuaje" />
+  </EntityType>
+  <EntityType Name="tatuaje">
+    <Key>
+      <PropertyRef Name="id_tatoo" />
+    </Key>
+    <Property Name="id_tatoo" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_wu" Type="Int16" />
+    <Property Name="id_tat" Type="Int16" />
+    <Property Name="style_tatoo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="color_tatoo" Type="Boolean" Nullable="false" />
+    <Property Name="date_tatoo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="time_tatoo" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="price_tatoo" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="shoot_date" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuaje_tatuador" FromRole="tatuaje" ToRole="tatuador" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="id_u" />
+    </Key>
+    <Property Name="id_u" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pass1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pass2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_reg" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="comentario" Relationship="Self.FK_comentario_usuarios" FromRole="usuarios" ToRole="comentario" />
+    <NavigationProperty Name="empresa" Relationship="Self.FK_empresa_usuarios" FromRole="usuarios" ToRole="empresa" />
+    <NavigationProperty Name="noticia" Relationship="Self.FK_noticia_usuarios" FromRole="usuarios" ToRole="noticia" />
+    <NavigationProperty Name="tatuador" Relationship="Self.FK_tatuador_usuarios" FromRole="usuarios" ToRole="tatuador" />
+    <NavigationProperty Name="webuser" Relationship="Self.FK_webuser_usuarios" FromRole="usuarios" ToRole="webuser" />
+  </EntityType>
+  <EntityType Name="webuser">
+    <Key>
+      <PropertyRef Name="id_wu" />
+    </Key>
+    <Property Name="id_wu" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_u" Type="Int16" Nullable="false" />
+    <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="b_date" Type="DateTime" Precision="3" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_webuser_usuarios" FromRole="webuser" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="zona">
+    <Key>
+      <PropertyRef Name="id_zone" />
+    </Key>
+    <Property Name="id_zone" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="comentario" Relationship="Self.FK_comentario_zona" FromRole="zona" ToRole="comentario" />
+    <NavigationProperty Name="noticia" Relationship="Self.FK_noticia_zona" FromRole="zona" ToRole="noticia" />
+  </EntityType>
+  <Association Name="FK_comentario_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+    <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_u" />
+      </Principal>
+      <Dependent Role="comentario">
+        <PropertyRef Name="id_u" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_comentario_zona">
+    <End Role="zona" Type="Self.zona" Multiplicity="1" />
+    <End Role="comentario" Type="Self.comentario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zona">
+        <PropertyRef Name="id_zone" />
+      </Principal>
+      <Dependent Role="comentario">
+        <PropertyRef Name="zone_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_empresa_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="empresa" Type="Self.empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_u" />
+      </Principal>
+      <Dependent Role="empresa">
+        <PropertyRef Name="id_u" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tatuador_empresa">
+    <End Role="empresa" Type="Self.empresa" Multiplicity="1" />
+    <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empresa">
+        <PropertyRef Name="id_emp" />
+      </Principal>
+      <Dependent Role="tatuador">
+        <PropertyRef Name="id_emp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_noticia_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+    <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_u" />
+      </Principal>
+      <Dependent Role="noticia">
+        <PropertyRef Name="id_u" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_noticia_zona">
+    <End Role="zona" Type="Self.zona" Multiplicity="1" />
+    <End Role="noticia" Type="Self.noticia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zona">
+        <PropertyRef Name="id_zone" />
+      </Principal>
+      <Dependent Role="noticia">
+        <PropertyRef Name="zone_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tatuador_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+    <End Role="tatuador" Type="Self.tatuador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_u" />
+      </Principal>
+      <Dependent Role="tatuador">
+        <PropertyRef Name="id_u" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tatuaje_tatuador">
+    <End Role="tatuador" Type="Self.tatuador" Multiplicity="0..1" />
+    <End Role="tatuaje" Type="Self.tatuaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tatuador">
+        <PropertyRef Name="id_tat" />
+      </Principal>
+      <Dependent Role="tatuaje">
+        <PropertyRef Name="id_tat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_webuser_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="webuser" Type="Self.webuser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_u" />
+      </Principal>
+      <Dependent Role="webuser">
+        <PropertyRef Name="id_u" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="tutatuUsable" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="comentario" EntityType="Self.comentario" />
+    <EntitySet Name="empresa" EntityType="Self.empresa" />
+    <EntitySet Name="noticia" EntityType="Self.noticia" />
+    <EntitySet Name="tatuador" EntityType="Self.tatuador" />
+    <EntitySet Name="tatuaje" EntityType="Self.tatuaje" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+    <EntitySet Name="webuser" EntityType="Self.webuser" />
+    <EntitySet Name="zona" EntityType="Self.zona" />
+    <AssociationSet Name="FK_comentario_usuarios" Association="Self.FK_comentario_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="comentario" EntitySet="comentario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_comentario_zona" Association="Self.FK_comentario_zona">
+      <End Role="zona" EntitySet="zona" />
+      <End Role="comentario" EntitySet="comentario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_empresa_usuarios" Association="Self.FK_empresa_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="empresa" EntitySet="empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tatuador_empresa" Association="Self.FK_tatuador_empresa">
+      <End Role="empresa" EntitySet="empresa" />
+      <End Role="tatuador" EntitySet="tatuador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_noticia_usuarios" Association="Self.FK_noticia_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="noticia" EntitySet="noticia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_noticia_zona" Association="Self.FK_noticia_zona">
+      <End Role="zona" EntitySet="zona" />
+      <End Role="noticia" EntitySet="noticia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tatuador_usuarios" Association="Self.FK_tatuador_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="tatuador" EntitySet="tatuador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tatuaje_tatuador" Association="Self.FK_tatuaje_tatuador">
+      <End Role="tatuador" EntitySet="tatuador" />
+      <End Role="tatuaje" EntitySet="tatuaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_webuser_usuarios" Association="Self.FK_webuser_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="webuser" EntitySet="webuser" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

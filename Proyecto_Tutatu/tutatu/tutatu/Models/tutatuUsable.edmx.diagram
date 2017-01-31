@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="59d0e858ea6f4bb3987f51bd7eec3586" Name="Diagram1">
+        <EntityTypeShape EntityType="tutatuDB.comentario" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.empresa" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.noticia" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.tatuador" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.tatuaje" Width="1.5" PointX="7.5" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.usuarios" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.webuser" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tutatuDB.zona" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="tutatuDB.FK_comentario_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_comentario_zona" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_empresa_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_tatuador_empresa" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_noticia_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_noticia_zona" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_tatuador_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_tatuaje_tatuador" ManuallyRouted="false" />
+        <AssociationConnector Association="tutatuDB.FK_webuser_usuarios" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

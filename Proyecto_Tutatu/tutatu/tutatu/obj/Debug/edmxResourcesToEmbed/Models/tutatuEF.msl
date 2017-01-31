@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tutatuEF1StoreContainer" CdmEntityContainer="tutatuEF">
+    <EntitySetMapping Name="comentario">
+      <EntityTypeMapping TypeName="tutatuEF1.comentario">
+        <MappingFragment StoreEntitySet="comentario">
+          <ScalarProperty Name="id_com" ColumnName="id-com" />
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="zone_id" ColumnName="zone-id" />
+          <ScalarProperty Name="cont_id" ColumnName="cont-id" />
+          <ScalarProperty Name="content" ColumnName="content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empresa">
+      <EntityTypeMapping TypeName="tutatuEF1.empresa">
+        <MappingFragment StoreEntitySet="empresa">
+          <ScalarProperty Name="id_emp" ColumnName="id-emp" />
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cif" ColumnName="cif" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="web" ColumnName="web" />
+          <ScalarProperty Name="services" ColumnName="services" />
+          <ScalarProperty Name="trayectoria" ColumnName="trayectoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="noticia">
+      <EntityTypeMapping TypeName="tutatuEF1.noticia">
+        <MappingFragment StoreEntitySet="noticia">
+          <ScalarProperty Name="id_not" ColumnName="id-not" />
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="zone_id" ColumnName="zone-id" />
+          <ScalarProperty Name="cont_id" ColumnName="cont-id" />
+          <ScalarProperty Name="asunto" ColumnName="asunto" />
+          <ScalarProperty Name="content" ColumnName="content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="tutatuEF1.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tatuador">
+      <EntityTypeMapping TypeName="tutatuEF1.tatuador">
+        <MappingFragment StoreEntitySet="tatuador">
+          <ScalarProperty Name="id_tat" ColumnName="id-tat" />
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="id_emp" ColumnName="id-emp" />
+          <ScalarProperty Name="fname_tat" ColumnName="fname-tat" />
+          <ScalarProperty Name="sname_tat" ColumnName="sname-tat" />
+          <ScalarProperty Name="email_tat" ColumnName="email-tat" />
+          <ScalarProperty Name="phone_tat" ColumnName="phone-tat" />
+          <ScalarProperty Name="style_tat" ColumnName="style-tat" />
+          <ScalarProperty Name="ink_tat" ColumnName="ink-tat" />
+          <ScalarProperty Name="designer_tat" ColumnName="designer-tat" />
+          <ScalarProperty Name="trayectory_tat" ColumnName="trayectory-tat" />
+          <ScalarProperty Name="study_tat" ColumnName="study-tat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tatuaje">
+      <EntityTypeMapping TypeName="tutatuEF1.tatuaje">
+        <MappingFragment StoreEntitySet="tatuaje">
+          <ScalarProperty Name="id_tatoo" ColumnName="id-tatoo" />
+          <ScalarProperty Name="id_wu" ColumnName="id-wu" />
+          <ScalarProperty Name="id_tat" ColumnName="id-tat" />
+          <ScalarProperty Name="style_tatoo" ColumnName="style-tatoo" />
+          <ScalarProperty Name="color_tatoo" ColumnName="color-tatoo" />
+          <ScalarProperty Name="date_tatoo" ColumnName="date-tatoo" />
+          <ScalarProperty Name="time_tatoo" ColumnName="time-tatoo" />
+          <ScalarProperty Name="price_tatoo" ColumnName="price-tatoo" />
+          <ScalarProperty Name="shoot_date" ColumnName="shoot-date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="tutatuEF1.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="pass1" ColumnName="pass1" />
+          <ScalarProperty Name="pass2" ColumnName="pass2" />
+          <ScalarProperty Name="date_reg" ColumnName="date-reg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webuser">
+      <EntityTypeMapping TypeName="tutatuEF1.webuser">
+        <MappingFragment StoreEntitySet="webuser">
+          <ScalarProperty Name="id_wu" ColumnName="id-wu" />
+          <ScalarProperty Name="id_u" ColumnName="id-u" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="sname" ColumnName="sname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="b_date" ColumnName="b-date" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zona">
+      <EntityTypeMapping TypeName="tutatuEF1.zona">
+        <MappingFragment StoreEntitySet="zona">
+          <ScalarProperty Name="id_zone" ColumnName="id-zone" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="tutatuEF1.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="tutatuEF1.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="tutatuEF1.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="tutatuEF1.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="tutatuEF1.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="tutatuEF1.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="tutatuEF1.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="tutatuEF1.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="tutatuEF1.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
