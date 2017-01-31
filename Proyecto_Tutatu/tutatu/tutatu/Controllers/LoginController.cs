@@ -59,8 +59,8 @@ namespace tutatu.Controllers
             catch (Exception e)
             {
 
-                ViewBag.MENSAJE = "Usuario o contraseña no valida.\r" + e.Message;
-                return View("Index");
+                ViewBag.MENSAJE = "Usuario o contraseña no valida.\r";
+                return View("webuser");
             }
 
             
@@ -71,12 +71,16 @@ namespace tutatu.Controllers
         {
             ViewBag.ACTIVO = "login";
 
-            HttpCookie cookie = Request.Cookies.Get("usr");
-            cookie.Expires = DateTime.Now.AddDays(-1d);
-            Response.AppendCookie(cookie);
-            ViewBag.LOGUED = false;
+            
 
-            return View();
+                HttpCookie cookie = Request.Cookies.Get("usr");
+                cookie.Expires = DateTime.Now.AddDays(-1d);
+                Response.AppendCookie(cookie);
+                ViewBag.LOGUED = false;
+            
+        
+
+            return RedirectToAction("Index", "Home");
         }
 
     }

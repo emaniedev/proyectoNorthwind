@@ -9,6 +9,21 @@ namespace tutatu.Models
     {
         private tutatuUsa datos = new tutatuUsa();
 
+
+        /// <summary>
+        /// Crea una empresa pasandole todos los campos
+        /// </summary>
+        /// <param name="nick">string</param>
+        /// <param name="pass">string</param>
+        /// <param name="nom">string</param>
+        /// <param name="cif">string</param>
+        /// <param name="addr">string can null</param>
+        /// <param name="phon">int can null</param>
+        /// <param name="own">string</param>
+        /// <param name="email">string can null</param>
+        /// <param name="web">string</param>
+        /// <param name="services">string</param>
+        /// <param name="trayec">string</param>
         public void crearEmpresa(string nick, string pass, string nom, string cif, string addr, string phon, string own, string email, string web, string services, string trayec)
         {
             usuarios nuevoUser = new usuarios();

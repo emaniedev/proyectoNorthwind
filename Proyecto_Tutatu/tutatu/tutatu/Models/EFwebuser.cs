@@ -75,19 +75,12 @@ namespace tutatu.Models
             {
                 omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick && usr.pass1 == pass select usr).FirstOrDefault();
 
-                if (omWebuserBD != null)
+                if (omWebuserBD != null && omWebuserBD.pass1 == omWebuserBD.pass1)
                 {
-                    if (omWebuserBD.pass1 == omWebuserIn.pass1)
-                    {
+                    
 
-                        
-                        
-                        
-                        
-                        
-
-                    }
-                    return omWebuserBD.id_u;
+                        return omWebuserBD.id_u;
+           
                 }
                 else
                 {
@@ -105,56 +98,6 @@ namespace tutatu.Models
 
             
     }
-
-        /// <summary>
-        /// Autentica un usuario en la web. Devuelve un 1 si el usuario se ha logueado correctamente y 0 en caso contrario.
-        /// </summary>
-        /// <param name="nick"></param>
-        /// <param name="pass"></param>
-        public short loguear (string nick, string pass, bool check)
-        {
-            
-            usuarios omWebuserIn = new usuarios();
-            usuarios omWebuserBD = new usuarios();
-
-            omWebuserIn.nickname = nick;
-            omWebuserIn.pass1 = pass;
-            omWebuserBD.nickname = "";
-            omWebuserBD.pass1 = "";
-            try
-            {
-                omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick && usr.pass1 == pass select usr).FirstOrDefault();
-
-                if (omWebuserBD != null)
-                {
-                    if (omWebuserBD.pass1 == omWebuserIn.pass1)
-                    {
-
-                        
-                        
-                        
-                        
-                        
-
-                    }
-                    return omWebuserBD.id_u;
-                }
-                else
-                {
-                    return  -1;
-                    throw new Exception("no se ha encontrado ninguna coincidencia.");
-                }
-
-            }
-            catch (Exception e)
-            {
-
-                throw e;
-            }
-
-            
-
-        }
 
         public string saludo(short idu)
         {
