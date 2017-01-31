@@ -14,12 +14,6 @@ namespace tutatu.Models
     
     public partial class webuser
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public webuser()
-        {
-            this.tatuaje = new HashSet<tatuaje>();
-        }
-    
         public short id_wu { get; set; }
         public short id_u { get; set; }
         public string fname { get; set; }
@@ -28,8 +22,6 @@ namespace tutatu.Models
         public Nullable<System.DateTime> b_date { get; set; }
         public string sexo { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tatuaje> tatuaje { get; set; }
         public virtual usuarios usuarios { get; set; }
     }
 }

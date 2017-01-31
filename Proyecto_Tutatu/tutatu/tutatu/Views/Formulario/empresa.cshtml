@@ -4,41 +4,56 @@
 }
 
 <h2>Empresa</h2>
+    <div class="container">
+        <div class="jumbotron">
+            <form action="" method="post" class="form-horizontal" title="Nuevo WebUser">
+                <p>Introduce los datos acontinuación.</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        Nickname: <input type="text" class="form-control" name="nick" id="nick" value="" placeholder="Nickname" />
+                        Password: <input type="password" class="form-control" name="pass" id="pass" value="" placeholder="Password" />
+                        Nombre: <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre" />
+                        Cif: <input type="text" class="form-control" name="cif" id="cif" value="" placeholder="Cif" />
+                        Propietario: <input type="text" class="form-control" name="propietario" id="propietario" value="" placeholder="Nombre Propietario" />
 
-<div class="container">
-    <form action="" method="post" class="form-horizontal" title="Nuevo WebUser">
-        <p>Introduce los datos acontinuación.</p>
-        <div class="row">
-            <div class="form-group col-sm-4">
-                Nickname: <input type="text" class="form-control" name="nick" id="nick" value="" placeholder="Nickname" />
-                Password: <input type="password" class="form-control" name="pass" id="pass" value="" placeholder="Password" />
-            </div>
-            
-            <div class="form-group col-sm-4">
-                Nombre: <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre" />
-                Cif: <input type="text" class="form-control" name="cif" id="cif" value="" placeholder="Cif" />
-                Direccion: <textarea class="form-control" name="direccion" id="direccion" value="" placeholder="Direccion"></textarea>
-                Telefono: <input type="text" class="form-control" name="telefono" id="telefono" value="" placeholder="999-999-999" />
-                Email: <input type="email" class="form-control" name="email" id="email" value="" placeholder="example@domain.com" />
-                Web: <input type="text" class="form-control" name="web" id="web" value="" placeholder="Sitio Web" />
-                Propietario: <input type="text" class="form-control" name="propietario" id="propietario" value="" placeholder="Nombre Propietario" />
-            </div>    
-                          
-        
-        
-        
-            <div class="col-sm-4">
-                Servicios: <textarea type="text" class="form-control" name="serv" id="serv" value="" placeholder="Servicios disponibles"></textarea>
-                Trayectoria: <textarea type="text" class="form-control" name="trayectoria" id="trayectoria" value="" placeholder="Nombre" ></textarea>
-            </div>
+                    </div>
+           
+                    <div class="col-sm-4">
+                        Direccion: <textarea class="form-control" name="direccion" id="direccion" value="" placeholder="Direccion"></textarea>
+                        Telefono: <input type="text" class="form-control" name="telefono" id="telefono" value="" placeholder="999-999-999" />
+                        Email: <input type="email" class="form-control" name="email" id="email" value="" placeholder="example@domain.com" />
+                        Web: <input type="text" class="form-control" name="web" id="web" value="" placeholder="Sitio Web" />
+                         </div>           
+                    <div class="col-sm-4">
+                        Servicios: <textarea type="text" class="form-control" name="serv" id="serv" value="" placeholder="Servicios disponibles"></textarea>
+                        Trayectoria: <textarea type="text" class="form-control" name="trayectoria" id="trayectoria" value="" placeholder="Nombre" ></textarea>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+
+
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input type="submit" class="btn btn-default btn-block" value="Enviar" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="reset" class="btn btn-default btn-block" value="Vaciar" />
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-8 text-right">
+                        <input type="button" class="btn btn-default" onClick="history.back()" value="Volver" />
+                    </div>
+
+                </div>
+            </form>
         </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-                <input type="submit" class="btn btn-success btn-block" value="Enviar" />
-
-            </div>
-
-        </div>
-    </form>
 </div>
 

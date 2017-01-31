@@ -21,6 +21,7 @@ namespace tutatu.Models
         }
     
         public short id_tat { get; set; }
+        public short id_u { get; set; }
         public short id_emp { get; set; }
         public string fname_tat { get; set; }
         public string sname_tat { get; set; }
@@ -33,6 +34,7 @@ namespace tutatu.Models
         public string study_tat { get; set; }
     
         public virtual empresa empresa { get; set; }
+        public virtual usuarios usuarios { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tatuaje> tatuaje { get; set; }
     }

@@ -7,7 +7,7 @@ namespace tutatu.Models
 {
     public class EFempresa
     {
-        private tutatuEF datos = new tutatuEF();
+        private tutatuUsa datos = new tutatuUsa();
 
         public void crearEmpresa(string nick, string pass, string nom, string cif, string addr, string phon, string own, string email, string web, string services, string trayec)
         {
