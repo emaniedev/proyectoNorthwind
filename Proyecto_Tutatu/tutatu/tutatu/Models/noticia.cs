@@ -19,6 +19,7 @@ namespace tutatu.Models
         public System.DateTime date { get; set; }
         public short zone_id { get; set; }
         public Nullable<short> cont_id { get; set; }
+        public string asunto { get; set; }
         public string content { get; set; }
     
         public virtual usuarios usuarios { get; set; }

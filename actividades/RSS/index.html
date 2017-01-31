@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lector RSS</title>
+    
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lector RSS</h1>            
+            <div role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"
+                    id="liRSS">
+                        <a href="#RSS" aria-controls="RSS" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-th"></span> RSS</a>
+                    </li>
+                    <li role="presentation" id="liVer">
+                        <a href="#Ver" aria-controls="Ver" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-eye-open"></span> Ver</a>
+                    </li>
+                    <li role="presentation" id="liNueva">
+                        <a href="#Nueva" aria-controls="Nueva" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-exclamation-sign"></span> Nueva</a>
+                    </li>
+                </ul>
+            
+                
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="RSS">
+                        <div class="container">
+                            <h1>RSS <span id="cantRSS"></span></h1>
+
+                            
+                            <table class="table table-bordered table-hover table-striped" id="tablaRSS">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Titulo</th>
+                                        <th>URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+
+
+                                </tbody>
+                            </table>
+                            
+
+                        </div>
+                        
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Ver">
+                        <div class="container">
+                            <h1>Ver</h1>
+
+                            <table class="table table-bordered table-hover table-striped" id="tablaFEEDS">
+                                <thead>
+                                    <tr>
+                                        <th>Noticias</th>
+                                        
+                                    </tr>
+                                </thead>
+                                
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Nueva">
+                        <div class="container">
+                            <h1>Nueva</h1>
+                            <form>
+                                <div class="form-group">
+                                    Titulo: <input class="form-control" type="text" name="titulo" id="titulo">
+                                </div>
+                                <div class="form-group">
+                                    URL: <input class="form-control" type="text" name="rssurl" id="rssurl">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn btn-success" type="button" onclick="nueva();" value="Añadir">
+                                    <input type="reset" class="btn btn-warning">
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        </div>
+        
+    </main>
+
+
+
+
+<script src="jQuery/jquery-3.1.1.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="propio.js"></script>
+<script>
+    $(document).ready(function () {
+    numRSS();
+    recursosRSS();
+});
+</script>
+  
+</html>

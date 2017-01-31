@@ -31,6 +31,17 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Request.Cookies.Get("usr") != null)
                     {
+                        <li id="login"><a href="/Login/logout"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
+                    }
+                    else
+                    {
+                    <li id="signup"><a href="/Formulario"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="login"><a href="/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    }
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Request.Cookies.Get("usr") != null)
+                    {
                         
                     
                         <span>Hola!, @Request.Cookies.Get("name") </span>
