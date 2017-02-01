@@ -25,7 +25,7 @@
 
                     <li id="video" class="">@Html.ActionLink("Videos", "Index", "Videos")</li>
                     <li id="noticia" class="">@Html.ActionLink("Noticias", "Index", "Noticias")</li>
-                    <li id="contacto" class="">@Html.ActionLink("Usuarios", "Index", "Contacto")</li>
+                    <li id="contacto" class="">@Html.ActionLink("Usuarios", "Index", "MANUsuarios")</li>
                     
                 </ul>
                
@@ -34,7 +34,7 @@
                     {
                         
                     
-                        <span>Hola!, @Request.Cookies.Get("name") </span>
+                        <span>Hola!, @Request.Cookies.Get("name").Value </span>
                         <li id="login"><a href="/Login/logout"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
                     }
                     else

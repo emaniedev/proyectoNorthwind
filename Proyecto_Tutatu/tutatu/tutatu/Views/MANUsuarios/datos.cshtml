@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "datos";
+
+    tutatu.Models.webuser webuser = ViewBag.INFO;
+}
+
+<h2>datos</h2>
+
+
+    <form>
+        <div class="form-group">
+            Nombre: <input type="text" class="form-control" value="@webuser.fname" />
+            Apellidos: <input type="text" class="form-control" value="@webuser.sname" />
+            Sexo: <input type="text" class="form-control" value="@webuser.sexo" />
+        </div>
+        <div class="form-group">
+            Email: <input type="email" class="form-control" value="@webuser.email" />
+            Cumpleaños: <input type="date" class="form-control" value="@webuser.b_date" />
+
+        </div>
+    </form>
+
+
+
+
+

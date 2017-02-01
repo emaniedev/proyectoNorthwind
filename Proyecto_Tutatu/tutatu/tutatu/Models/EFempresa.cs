@@ -59,5 +59,67 @@ namespace tutatu.Models
 
 
         }
+
+
+        /// <summary>
+        /// Autentica una empresa en la web. Devuelve un 1 si el usuario se ha logueado correctamente y 0 en caso contrario.
+        /// </summary>
+        /// <param name="nick"></param>
+        /// <param name="pass"></param>
+        public short loguear(string nick, string pass, bool check)
+        {
+
+            
+            usuarios omEmpresaBD = new usuarios();
+
+            
+            omEmpresaBD.nickname = "";
+            omEmpresaBD.pass1 = "";
+            try
+            {
+                omEmpresaBD = (from usr in datos.usuarios where usr.nickname == nick && usr.pass1 == pass select usr).FirstOrDefault();
+
+                if (omEmpresaBD != null)
+                {
+
+
+                    return omEmpresaBD.id_u;
+
+                }
+                else
+                {
+                    return -1;
+                    throw new Exception("no se ha encontrado ninguna coincidencia.");
+                }
+
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+
+
+
+        }
+
+
+
+        public string saludo(short idu)
+        {
+            try
+            {
+                string nameGreetings = (from emp in datos.empresa where emp.id_u == idu select emp.name).FirstOrDefault();
+
+                return nameGreetings;
+
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+
+        }
     }
 }

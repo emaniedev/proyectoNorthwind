@@ -1,0 +1,51 @@
+﻿
+@{
+
+    ViewBag.Title = "lista";
+
+    List<tutatu.Models.usuarios> lUsuarios = ViewBag.LISTA;
+}
+
+<h2>Listado de todos los usuarios</h2>
+
+
+<div class="container">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+
+            <tr>
+
+                <th>Id</th>
+                <th>nickname</th>
+                
+                <th>FechaRegistro</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in lUsuarios)
+            {
+                <tr>
+                    <td>@usuario.id_u</td>
+                    <td>@usuario.nickname</td>
+                    <td>@usuario.date_reg</td>
+                    <td>
+                        <a href="mostrarInfoWeb/@usuario.id_u"><button class="btn btn-info"> Info</button></a>
+                        <a href="eliminar/@usuario.id_u"><button class="btn btn-danger"> Eliminar</button></a>
+                    </td>
+                </tr>
+                
+            }
+        
+
+
+        </tbody>
+
+
+
+
+    </table>
+
+
+</div>
+

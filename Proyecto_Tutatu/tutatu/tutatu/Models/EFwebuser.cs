@@ -64,13 +64,11 @@ namespace tutatu.Models
         public short loguear (string nick, string pass, bool check)
         {
             
-            usuarios omWebuserIn = new usuarios();
+            
             usuarios omWebuserBD = new usuarios();
 
-            omWebuserIn.nickname = nick;
-            omWebuserIn.pass1 = pass;
-            omWebuserBD.nickname = "";
-            omWebuserBD.pass1 = "";
+            
+          
             try
             {
                 omWebuserBD = (from usr in datos.usuarios where usr.nickname == nick && usr.pass1 == pass select usr).FirstOrDefault();
@@ -99,6 +97,11 @@ namespace tutatu.Models
             
     }
 
+        /// <summary>
+        /// Consigue el nombre del usuario.
+        /// </summary>
+        /// <param name="idu">Identificador unico del usuario</param>
+        /// <returns></returns>
         public string saludo(short idu)
         {
             try
@@ -115,6 +118,21 @@ namespace tutatu.Models
             }
 
         }
+
+        /// <summary>
+        /// Consigue un unico usuario de la bd
+        /// </summary>
+        /// <param name="id">Identificador unico del usuario</param>
+        /// <returns></returns>
+        public webuser conseguirUsuario(int id)
+        {
+            webuser info;
+
+            info = (from usr in datos.webuser where usr.id_u == id select usr).SingleOrDefault();
+
+            return info;
+        }
+
         public void desloguear()
         {
             
